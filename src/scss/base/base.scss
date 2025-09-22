@@ -1,0 +1,27 @@
+@use "../variables/variables" as *;
+
+body {
+  background-color: $backgroundVulcan;
+  color: white;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  padding-inline: 90px;
+  @media (max-width: 768px) {
+    padding-inline: 32px;
+  }
+}
+
+[class*="--container"] {
+  padding-block: 120px;
+  @media (max-width: 1024px) {
+    padding-block: 100px;
+  }
+  @media (max-width: 414px) {
+    padding-block: 45px;
+  }
+}

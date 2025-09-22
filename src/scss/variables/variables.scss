@@ -1,0 +1,77 @@
+@use "sass:map";
+// BACKGROUND
+$backgroundVulcan: #12121c;
+$backgroundFooter: #222233;
+// COLOR
+$primaryColor: #FFFFFF;
+$secondaryColor: #88888D;
+// FONTS
+$fonts: (
+  primaryHeroTitle: (
+    family: "Sora",
+    fallback: sans-serif,
+    weight: 700,
+    style: normal,
+    font-size: 72px,
+    line-height: 86px,
+    letter-spacing: -2%,
+  ),
+  primaryTitle: (
+    family: "Sora",
+    fallback: sans-serif,
+    weight: 700,
+    style: normal,
+    font-size: 48px,
+    line-height: 56px,
+    letter-spacing: 0px,
+  ),
+  primaryText: (
+    family: "Sora",
+    fallback: sans-serif,
+    weight: 400,
+    style: normal,
+    font-size: 14px,
+    line-height: 24px,
+    letter-spacing: 0px,
+  ),
+  primaryCardsTitle: (
+    family: "Sora",
+    fallback: sans-serif,
+    weight: 600,
+    style: normal,
+    font-size: 24px,
+    line-height: 32px,
+  ),
+  primaryCardsCaption: (
+    family: "Sora",
+    fallback: sans-serif,
+    weight: 400,
+    style: normal,
+    font-size: 12px,
+    line-height: 20px,
+    letter-spacing: 0px,
+  ),
+  secondary: (
+    family: "Inter",
+    fallback: sans-serif,
+    weight: 400,
+    style: normal,
+  ),
+);
+
+
+@mixin font($font-map) {
+  font-family: "#{map.get($font-map, family)}, #{map.get($font-map, fallback)}";
+  font-weight: map.get($font-map, weight);
+  font-style: map.get($font-map, style);
+  font-size: map.get($font-map, font-size);
+  line-height: map.get($font-map, line-height);
+  letter-spacing: map.get($font-map, letter-spacing);
+}
+
+$primaryHeroTitle: map.get($fonts, primaryHeroTitle);
+$primaryTitle: map.get($fonts, primaryTitle);
+$primaryText: map.get($fonts, primaryText);
+$secondary: map.get($fonts, secondary);
+$primaryCardsTitle: map.get($fonts, primaryCardsTitle);
+$primaryCardsCaption: map.get($fonts, primaryCardsCaption);

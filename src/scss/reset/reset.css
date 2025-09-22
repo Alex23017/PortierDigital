@@ -1,0 +1,82 @@
+/* ===============================
+   Modern CSS Reset / Full Reset
+   =============================== */
+
+/* Box-sizing border-box for all elements */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* Set default body styles */
+html, body {
+  height: 100%;
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+  background: #fff;
+  color: #000;
+}
+
+/* Remove list styles on ul, ol elements */
+ul, ol, li {
+  list-style: none;
+  text-decoration: none;
+ 
+}
+
+/* Remove default quotes for blockquote, q */
+blockquote, q {
+  quotes: none;
+}
+blockquote::before, blockquote::after,
+q::before, q::after {
+  content: '';
+  content: none;
+}
+
+/* Remove table spacing and borders */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Remove default button/input styles */
+button, input, select, textarea {
+  font: inherit;
+  background: none;
+  border: none;
+  outline: none;
+  color: inherit;
+}
+
+/* Anchor tag reset */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Image reset */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Form elements inherit font */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* Optional: smooth scroll behavior for the whole page */
+html {
+  scroll-behavior: smooth;
+}
