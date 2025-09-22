@@ -1,0 +1,96 @@
+// HERO SECTION
+@use "../../variables/variables" as *;
+
+.hero {
+}
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  gap: 76px;
+}
+.hero__digital {
+  max-width: 1093px;
+}
+.hero__digital-title {
+  @include font($primaryHeroTitle);
+  padding-block-end: 16px;
+}
+.hero__digital-title--product {
+  color: $secondaryColor;
+}
+.hero__digital-title--point {
+  color: $backgroundGreen;
+}
+.hero__digital-text {
+  @include font($primaryHeroText);
+  color: $secondaryColor;
+  padding-block-end: 32px;
+  max-width: 809px;
+}
+.hero__button {
+}
+.button {
+  text-align: center;
+  background-color: $colorButton;
+  max-width: 107px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0px;
+  padding-block: 14px;
+  padding-inline: 24px;
+  border-radius: 8px;
+  white-space: nowrap;
+}
+.hero__button-link {
+}
+.hero__cards {
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 35px;
+  @media (max-width: 1025px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.hero__card {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  max-width: 402px;
+}
+.hero__card--grey {
+  background-color: $backgroundFooter;
+  border-radius: 8px;
+}
+.hero__card-icon {
+  max-width: 44px;
+  max-height: 44px;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: $backgroundFooter;
+  img {
+    width: 15px;
+    height: 15px;
+  }
+  &--green {
+    background-color: $backgroundGreen;
+  }
+}
+.hero__card-icon--green {
+}
+
+.hero__card-title {
+  padding-block-start: 24px;
+  padding-block-end: 16px;
+  @include font($primaryCardsTitle);
+}
+.hero__card-title-text {
+  @include font($primaryText);
+  color: $secondaryColor;
+}

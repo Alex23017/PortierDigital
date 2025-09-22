@@ -1,0 +1,120 @@
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  gap: 4.75rem;
+}
+
+.hero__digital {
+  max-width: 68.3125rem;
+}
+
+.hero__digital-title {
+  font-family: "Sora", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 4.5rem;
+  line-height: 5.375rem;
+  letter-spacing: 0;
+  padding-block-end: 1rem;
+}
+
+.hero__digital-title--product {
+  color: #88888d;
+}
+
+.hero__digital-title--point {
+  color: #57efb4;
+}
+
+.hero__digital-text {
+  font-family: "Sora", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  letter-spacing: -1%;
+  color: #88888d;
+  padding-block-end: 2rem;
+  max-width: 50.5625rem;
+}
+
+.button {
+  text-align: center;
+  background-color: #006ada;
+  max-width: 6.6875rem;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  letter-spacing: 0;
+  padding-block: 0.875rem;
+  padding-inline: 1.5rem;
+  border-radius: 0.5rem;
+  white-space: nowrap;
+}
+
+.hero__cards {
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.1875rem;
+}
+@media (max-width: 1025px) {
+  .hero__cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  .hero__cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.hero__card {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  max-width: 25.125rem;
+}
+
+.hero__card--grey {
+  background-color: #222233;
+  border-radius: 0.5rem;
+}
+
+.hero__card-icon {
+  max-width: 2.75rem;
+  max-height: 2.75rem;
+  padding: 0.9375rem;
+  border-radius: 0.5rem;
+  background-color: #222233;
+}
+.hero__card-icon img {
+  width: 0.9375rem;
+  height: 0.9375rem;
+}
+.hero__card-icon--green {
+  background-color: #57efb4;
+}
+
+.hero__card-title {
+  padding-block-start: 1.5rem;
+  padding-block-end: 1rem;
+  font-family: "Sora", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.hero__card-title-text {
+  font-family: "Sora", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  letter-spacing: 0;
+  color: #88888d;
+}
+/*# sourceMappingURL=homeStyle.css.map */

@@ -10,6 +10,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  gap: 20px;
 }
 
 .logo {
@@ -24,10 +25,21 @@
       -ms-flex: 1 1;
           flex: 1 1;
 }
+@media (max-width: 768px) {
+  .logo {
+    padding-block: 25px;
+  }
+}
 
 .logo__img {
   width: 44px;
   height: 44px;
+}
+@media (max-width: 768px) {
+  .logo__img {
+    width: 38px;
+    height: 38px;
+  }
 }
 
 .logo__text {
@@ -36,6 +48,11 @@
   font-size: 27px;
   line-height: 100%;
   letter-spacing: 0px;
+}
+@media (max-width: 768px) {
+  .logo__text {
+    font-size: 22px;
+  }
 }
 
 .nav__list {
@@ -49,12 +66,20 @@
       -ms-flex-pack: center;
           justify-content: center;
   gap: 40px;
+  padding-block: 36px;
+}
+@media (max-width: 768px) {
+  .nav__list {
+    display: none;
+  }
 }
 
 .nav__link {
-  font-size: 14px;
+  font-family: "Sora";
   font-weight: 700;
+  font-size: 14px;
   line-height: 16px;
+  letter-spacing: 0px;
   color: #88888D;
 }
 .nav__link:hover {
@@ -67,7 +92,45 @@
   color: #FFFFFF;
   font-size: 14px;
   line-height: 20px;
+  padding-block: 14px;
+  padding-inline: 24px;
+  border-radius: 8px;
+  background-color: #222233;
 }
-.nav__link--template:Hover {
-  color: inherit;
+
+.burger {
+  display: none;
+  width: 26px;
+  height: 18px;
+}
+@media (max-width: 768px) {
+  .burger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+    gap: 6px;
+    cursor: pointer;
+  }
+}
+.burger::before, .burger::after,
+.burger span::before {
+  position: absolute;
+  content: "";
+  width: 26px;
+  height: 2px;
+  background-color: #FFFFFF;
+}
+.burger::before {
+  top: 0;
+}
+.burger span::before {
+  bottom: 0;
+}
+.burger::after {
+  bottom: 8px;
 }/*# sourceMappingURL=header.css.map */

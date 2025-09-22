@@ -12,13 +12,25 @@
 }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, main, menu, nav, section, summary {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
   display: block;
 }
 
 /* Set default body styles */
-html, body {
+html,
+body {
   height: 100%;
   font-family: sans-serif;
   scroll-behavior: smooth;
@@ -27,19 +39,24 @@ html, body {
 }
 
 /* Remove list styles on ul, ol elements */
-ul, ol, li {
+ul,
+ol,
+li {
   list-style: none;
   text-decoration: none;
- 
+
 }
 
 /* Remove default quotes for blockquote, q */
-blockquote, q {
+blockquote,
+q {
   quotes: none;
 }
-blockquote::before, blockquote::after,
-q::before, q::after {
-  content: '';
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+  content: "";
   content: none;
 }
 
@@ -50,7 +67,10 @@ table {
 }
 
 /* Remove default button/input styles */
-button, input, select, textarea {
+button,
+input,
+select,
+textarea {
   font: inherit;
   background: none;
   border: none;
@@ -65,14 +85,21 @@ a {
 }
 
 /* Image reset */
-img, picture, video, canvas, svg {
+img,
+picture,
+video,
+canvas,
+svg {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
 /* Form elements inherit font */
-input, button, textarea, select {
+input,
+button,
+textarea,
+select {
   font: inherit;
 }
 

@@ -1,4 +1,5 @@
 @use "../reset/reset" as *;
 @use "../base/base" as *;
-@use "../header/header" as *;
-@use "../footer/footer" as *;
+@use "../pages/home/homeStyle" as *;
+@use "../components/header/header" as *;
+@use "../components/footer/footer" as *;

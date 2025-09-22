@@ -13,9 +13,16 @@
       href="https://fonts.googleapis.com/css?family=DM+Sans:700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/style/style.css">
+    <link rel="stylesheet" href="css/style/style.css" />
   </head>
   <body>
-    <div class="wrapper">@@include("../components/header/header.html")</div>
+    <div class="wrapper">
+      <header class="header">@@include("../components/header/header.html")</header>
+
+      <main class="main">
+        @@include("../pages/home/heroSection.html")
+      </main>
+      <footer class="footer"></footer>
+    </div>
   </body>
 </html>

@@ -3,8 +3,10 @@
 $backgroundVulcan: #12121c;
 $backgroundFooter: #222233;
 // COLOR
-$primaryColor: #FFFFFF;
-$secondaryColor: #88888D;
+$primaryColor: #ffffff;
+$secondaryColor: #88888d;
+$backgroundGreen: #57efb4;
+$colorButton: #006ada;
 // FONTS
 $fonts: (
   primaryHeroTitle: (
@@ -14,7 +16,16 @@ $fonts: (
     style: normal,
     font-size: 72px,
     line-height: 86px,
-    letter-spacing: -2%,
+    letter-spacing: 0px,
+  ),
+  primaryHeroText: (
+    family: "Sora",
+    fallback: sans-serif,
+    weight: 400,
+    style: normal,
+    font-size: 24px,
+    line-height: 32px,
+    letter-spacing: -1%,
   ),
   primaryTitle: (
     family: "Sora",
@@ -23,7 +34,7 @@ $fonts: (
     style: normal,
     font-size: 48px,
     line-height: 56px,
-    letter-spacing: 0px,
+    letter-spacing: -1%,
   ),
   primaryText: (
     family: "Sora",
@@ -59,9 +70,8 @@ $fonts: (
   ),
 );
 
-
 @mixin font($font-map) {
-  font-family: "#{map.get($font-map, family)}, #{map.get($font-map, fallback)}";
+  font-family: map.get($font-map, family), map.get($font-map, fallback);
   font-weight: map.get($font-map, weight);
   font-style: map.get($font-map, style);
   font-size: map.get($font-map, font-size);
@@ -70,6 +80,7 @@ $fonts: (
 }
 
 $primaryHeroTitle: map.get($fonts, primaryHeroTitle);
+$primaryHeroText: map.get($fonts, primaryHeroText);
 $primaryTitle: map.get($fonts, primaryTitle);
 $primaryText: map.get($fonts, primaryText);
 $secondary: map.get($fonts, secondary);

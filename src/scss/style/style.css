@@ -12,35 +12,50 @@
 }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, main, menu, nav, section, summary {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
   display: block;
 }
 
 /* Set default body styles */
-html, body {
+html,
+body {
   height: 100%;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, sans-serif;
-  line-height: 1.5;
+  font-family: sans-serif;
   scroll-behavior: smooth;
   background: #fff;
   color: #000;
 }
 
 /* Remove list styles on ul, ol elements */
-ul, ol, li {
+ul,
+ol,
+li {
   list-style: none;
-  text-decoration: none !important;
-  color: red;
+  text-decoration: none;
 }
 
 /* Remove default quotes for blockquote, q */
-blockquote, q {
+blockquote,
+q {
   quotes: none;
 }
 
-blockquote::before, blockquote::after,
-q::before, q::after {
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
   content: "";
   content: none;
 }
@@ -52,7 +67,10 @@ table {
 }
 
 /* Remove default button/input styles */
-button, input, select, textarea {
+button,
+input,
+select,
+textarea {
   font: inherit;
   background: none;
   border: none;
@@ -67,20 +85,32 @@ a {
 }
 
 /* Image reset */
-img, picture, video, canvas, svg {
+img,
+picture,
+video,
+canvas,
+svg {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
 /* Form elements inherit font */
-input, button, textarea, select {
+input,
+button,
+textarea,
+select {
   font: inherit;
 }
 
 /* Optional: smooth scroll behavior for the whole page */
 html {
   scroll-behavior: smooth;
+}
+
+body {
+  background-color: #12121c;
+  color: white;
 }
 
 .wrapper {
@@ -91,9 +121,6 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -104,4 +131,164 @@ html {
   .wrapper {
     padding-inline: 32px;
   }
+}
+
+[class*=__container] {
+  padding-block: 120px;
+}
+@media (max-width: 1024px) {
+  [class*=__container] {
+    padding-block: 100px;
+  }
+}
+@media (max-width: 414px) {
+  [class*=__container] {
+    padding-block: 45px;
+  }
+}
+
+.hero__digital-title {
+  font-family: "Sora, sans-serif";
+  font-weight: 700;
+  font-style: normal;
+  font-size: 72px;
+  line-height: 86px;
+  letter-spacing: -2%;
+}
+
+.header {
+  width: 100%;
+  max-width: 1440px;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1;
+          flex: 1 1;
+}
+@media (max-width: 768px) {
+  .logo {
+    padding-block: 25px;
+  }
+}
+
+.logo__img {
+  width: 44px;
+  height: 44px;
+}
+@media (max-width: 768px) {
+  .logo__img {
+    width: 38px;
+    height: 38px;
+  }
+}
+
+.logo__text {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 100%;
+  letter-spacing: 0px;
+}
+@media (max-width: 768px) {
+  .logo__text {
+    font-size: 22px;
+  }
+}
+
+.nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 40px;
+  padding-block: 36px;
+}
+@media (max-width: 768px) {
+  .nav__list {
+    display: none;
+  }
+}
+
+.nav__link {
+  font-family: "Sora";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0px;
+  color: #88888D;
+}
+.nav__link:hover {
+  color: #FFFFFF;
+}
+
+.nav__link--template {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  color: #FFFFFF;
+  font-size: 14px;
+  line-height: 20px;
+  padding-block: 14px;
+  padding-inline: 24px;
+  border-radius: 8px;
+  background-color: #222233;
+}
+
+.burger {
+  display: none;
+  width: 26px;
+  height: 18px;
+}
+@media (max-width: 768px) {
+  .burger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+    gap: 6px;
+    cursor: pointer;
+  }
+}
+.burger::before, .burger::after,
+.burger span::before {
+  position: absolute;
+  content: "";
+  width: 26px;
+  height: 2px;
+  background-color: #FFFFFF;
+}
+.burger::before {
+  top: 0;
+}
+.burger span::before {
+  bottom: 0;
+}
+.burger::after {
+  bottom: 8px;
 }/*# sourceMappingURL=style.css.map */
