@@ -1,4 +1,3 @@
-// gulpfile.mjs
 import gulp, { src, dest } from "gulp";
 import fileInclude from "gulp-file-include";
 import gulpSass from "gulp-sass";
@@ -10,7 +9,7 @@ import fs from "fs";
 import sourcemaps from "gulp-sourcemaps";
 import plumber from "gulp-plumber";
 import notify from "gulp-notify";
-import imagemin from "gulp-imagemin"; // версия 4.x
+import imagemin from "gulp-imagemin";
 import postcss from "gulp-postcss";
 import pxtorem from "postcss-pxtorem";
 import webpackStream from "webpack-stream";
@@ -25,9 +24,6 @@ import webpackConfig from "./webpack.config.js";
 const scss = gulpSass(sass);
 const browserSync = browserSyncLib.create();
 
-// ----------------------------------------
-// Plumber Error Handler
-// ----------------------------------------
 const plumberConfig = (title) => ({
   errorHandler: notify.onError({
     title,
@@ -36,9 +32,6 @@ const plumberConfig = (title) => ({
   }),
 });
 
-// ----------------------------------------
-// HTML
-// ----------------------------------------
 export const htmlDocs = () =>
   src("./src/pages/**/*.html")
     .pipe(plumber(plumberConfig("HTML")))
@@ -46,9 +39,6 @@ export const htmlDocs = () =>
     .pipe(dest("./docs/"))
     .pipe(browserSync.stream());
 
-// ----------------------------------------
-// Components
-// ----------------------------------------
 export const componentsDocs = () =>
   src("./src/components/**/*.html")
     .pipe(plumber(plumberConfig("Components")))
@@ -56,9 +46,6 @@ export const componentsDocs = () =>
     .pipe(dest("./docs/components/"))
     .pipe(browserSync.stream());
 
-// ----------------------------------------
-// SCSS
-// ----------------------------------------
 export const scssDocs = () =>
   src("./src/scss/**/*.scss")
     .pipe(plumber(plumberConfig("STYLES")))
@@ -70,9 +57,6 @@ export const scssDocs = () =>
     .pipe(dest("./docs/css/"))
     .pipe(browserSync.stream());
 
-// ----------------------------------------
-// JS
-// ----------------------------------------
 export const jsDocs = (done) => {
   src("./src/js/**/*.js")
     .pipe(plumber(plumberConfig("JS")))
@@ -84,9 +68,6 @@ export const jsDocs = (done) => {
     });
 };
 
-// ----------------------------------------
-// Images (gulp-imagemin v4 + WebP)
-// ----------------------------------------
 export const imagesDocs = () => {
   const optimized = src("./src/img/**/*.*", { encoding: false })
     .pipe(
@@ -94,7 +75,7 @@ export const imagesDocs = () => {
         mozjpeg({ progressive: true, quality: 75 }),
         optipng({ optimizationLevel: 5 }),
         svgo({ plugins: [{ name: "removeViewBox", active: false }] }),
-      ])
+      ]),
     )
     .pipe(dest("./docs/img/"));
 
@@ -105,17 +86,9 @@ export const imagesDocs = () => {
   return merge(optimized, webpImages).on("end", () => browserSync.reload());
 };
 
-// ----------------------------------------
-// Fonts
-// ----------------------------------------
 export const fontsDocs = () =>
-  src("./src/fonts/**/*")
-    .pipe(dest("./docs/fonts/"))
-    .pipe(browserSync.stream());
+  src("./src/fonts/**/*").pipe(dest("./docs/fonts/")).pipe(browserSync.stream());
 
-// ----------------------------------------
-// Clean
-// ----------------------------------------
 export const cleanDocs = (done) => {
   if (fs.existsSync("./docs/")) {
     return src("./docs/", { read: false }).pipe(clean({ force: true }));
@@ -123,9 +96,6 @@ export const cleanDocs = (done) => {
   done();
 };
 
-// ----------------------------------------
-// Server
-// ----------------------------------------
 export const serverDocs = () =>
   browserSync.init({
     server: { baseDir: "./docs", index: "index.html" },
@@ -133,9 +103,6 @@ export const serverDocs = () =>
     open: true,
   });
 
-// ----------------------------------------
-// Watch
-// ----------------------------------------
 export const watchDocs = () => {
   gulp.watch("./src/scss/**/*.scss", scssDocs);
   gulp.watch("./src/components/**/*.html", componentsDocs);
@@ -145,11 +112,8 @@ export const watchDocs = () => {
   gulp.watch("./src/fonts/**/*", fontsDocs);
 };
 
-// ----------------------------------------
-// Default
-// ----------------------------------------
 export default gulp.series(
   cleanDocs,
   gulp.parallel(htmlDocs, scssDocs, imagesDocs, jsDocs, fontsDocs, componentsDocs),
-  gulp.parallel(serverDocs, watchDocs)
+  gulp.parallel(serverDocs, watchDocs),
 );
