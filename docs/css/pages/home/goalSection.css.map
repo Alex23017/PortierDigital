@@ -1,0 +1,1 @@
+{"version":3,"sources":["pages/home/goalSection.scss","pages/home/goalSection.css"],"names":[],"mappings":"AAEA;EACE,yBAAA;ACDF","file":"goalSection.css","sourcesContent":["@use \"../../variables/variables\" as *;\r\n\r\n.goal__text--padding {\r\n  padding-block-start: 16px;\r\n}\r\n",".goal__text--padding {\n  padding-block-start: 16px;\n}"]}

@@ -17,6 +17,7 @@ $fonts: (
     font-size: 72px,
     line-height: 86px,
     letter-spacing: 0px,
+    
   ),
   primaryHeroText: (
     family: "Sora",
@@ -25,7 +26,7 @@ $fonts: (
     style: normal,
     font-size: 24px,
     line-height: 32px,
-    letter-spacing: -1%,
+    letter-spacing: 0px,
   ),
   primaryTitle: (
     family: "Sora",
@@ -34,7 +35,7 @@ $fonts: (
     style: normal,
     font-size: 48px,
     line-height: 56px,
-    letter-spacing: -1%,
+    letter-spacing: 0px,
   ),
   primaryText: (
     family: "Sora",
@@ -62,12 +63,7 @@ $fonts: (
     line-height: 20px,
     letter-spacing: 0px,
   ),
-  secondary: (
-    family: "Inter",
-    fallback: sans-serif,
-    weight: 400,
-    style: normal,
-  ),
+
 );
 
 @mixin font($font-map) {
@@ -83,6 +79,5 @@ $primaryHeroTitle: map.get($fonts, primaryHeroTitle);
 $primaryHeroText: map.get($fonts, primaryHeroText);
 $primaryTitle: map.get($fonts, primaryTitle);
 $primaryText: map.get($fonts, primaryText);
-$secondary: map.get($fonts, secondary);
 $primaryCardsTitle: map.get($fonts, primaryCardsTitle);
 $primaryCardsCaption: map.get($fonts, primaryCardsCaption);

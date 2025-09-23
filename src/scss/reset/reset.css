@@ -29,14 +29,7 @@ summary {
 }
 
 /* Set default body styles */
-html,
-body {
-  height: 100%;
-  font-family: sans-serif;
-  scroll-behavior: smooth;
-  background: #fff;
-  color: #000;
-}
+
 
 /* Remove list styles on ul, ol elements */
 ul,

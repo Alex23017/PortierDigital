@@ -1,3 +1,13 @@
+@charset "UTF-8";
+html,
+body {
+  min-height: 100%;
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+  background-color: #000; /* фон для всего */
+  color: #fff;
+}
+
 body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5,9 +15,6 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #12121c;
-  color: white;
-  min-height: 100vh;
 }
 
 main {
@@ -27,25 +34,20 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100vh;
-  padding-inline: 90px;
-}
-@media (max-width: 768px) {
-  .wrapper {
-    padding-inline: 32px;
-  }
 }
 
 [class*=__container] {
   padding-block: 120px;
+  padding-inline: 90px;
 }
-@media (max-width: 1024px) {
+@media (max-width: 1025px) {
   [class*=__container] {
     padding-block: 100px;
   }
 }
-@media (max-width: 414px) {
+@media (max-width: 768px) {
   [class*=__container] {
     padding-block: 45px;
+    padding-inline: 32px;
   }
 }/*# sourceMappingURL=base.css.map */

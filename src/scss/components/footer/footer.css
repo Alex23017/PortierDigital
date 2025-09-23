@@ -1,1 +1,117 @@
-/*# sourceMappingURL=footer.css.map */
+.footer {
+  width: 100%;
+}
+
+.footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #222233;
+}
+
+.footer__contact {
+  font-family: "Sora", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-padding-before: 32px;
+          padding-block-start: 32px;
+  -webkit-padding-after: 48px;
+          padding-block-end: 48px;
+}
+.footer__contact > div {
+  width: 291px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 8px;
+}
+@media (max-width: 768px) {
+  .footer__contact {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    -webkit-column-gap: 32px;
+       -moz-column-gap: 32px;
+            column-gap: 32px;
+    -webkit-padding-before: 23px;
+            padding-block-start: 23px;
+  }
+  .footer__contact > div {
+    width: 159px;
+  }
+}
+@media (max-width: 400px) {
+  .footer__contact > div {
+    width: 100px;
+  }
+}
+@media (max-width: 400px) {
+  .footer__contact {
+    place-items: center;
+  }
+}
+
+.footer__copy-title {
+  color: #88888d;
+}
+
+.footer__copy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media (max-width: 768px) {
+  .footer__copy {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    gap: 24px;
+  }
+}
+
+.footer__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 24px;
+}
+
+.footer__link--green {
+  background-color: #57efb4;
+  padding: 8px;
+  border-radius: 50px;
+}
+
+.footer__link img {
+  width: 15px;
+  height: 15px;
+}/*# sourceMappingURL=footer.css.map */

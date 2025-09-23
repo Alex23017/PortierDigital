@@ -1,0 +1,85 @@
+@use "../../variables/variables" as *;
+.what__container {
+  display: flex;
+  justify-content: space-between;
+  gap: 73px;
+  @media (max-width: 992.99px) {
+    flex-direction: column;
+    gap: 60px;
+  }
+}
+.what__column--what {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.what__body-title {
+  @include font($primaryTitle);
+  padding-block-end: 16px;
+  @media (max-width: 768px) {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
+.what__body {
+  max-width: 660px;
+}
+.what__body-text,
+.what__text,
+.what__card-text {
+  @include font($primaryText);
+  color: $secondaryColor;
+}
+
+.what__card-text {
+  padding-block-end: 24px;
+}
+.what__cards {
+  display: flex;
+  flex-direction: column;
+  gap: 39px;
+  @media (max-width: 992.98px) {
+    align-items: center;
+  }
+  @media (max-width: 768px) {
+    gap: 15px;
+  }
+}
+.what__card {
+  display: flex;
+  max-width: 438px;
+  gap: 4px;
+}
+.what__card--grey {
+  background-color: $backgroundFooter;
+  border-radius: 8px;
+}
+.what__body-img {
+  padding-block: 20px;
+  padding-inline-start: 20px;
+}
+.what__body-img img {
+  min-width: 44px;
+  min-height: 44px;
+}
+.what__info {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.what__card-title {
+  @include font($primaryCardsTitle);
+  padding-block-end: 4px;
+  white-space: nowrap;
+}
+.what__card-job {
+  @include font($primaryCardsCaption);
+}
+
+.what__text {
+  @media (max-width: 768px) {
+    padding-block-start: 48px;
+  }
+}

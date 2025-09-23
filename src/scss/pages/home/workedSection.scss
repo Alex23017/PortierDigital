@@ -1,0 +1,49 @@
+@use "../../variables/variables" as *;
+.worked__body {
+  display: flex;
+  column-gap: 32px;
+  row-gap: 16px;
+  @media (max-width: 1025px) {
+    flex-direction: column;
+  }
+  @media (max-width: 768px) {
+    gap: 35px;
+  }
+}
+.worked__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 164px;
+  @media (max-width: 1025px) {
+    gap: 116px;
+  }
+  @media (max-width: 992.99px) {
+    flex-direction: column;
+    gap: 48px;
+  }
+}
+.worked__title {
+  @include font($primaryTitle);
+  max-width: 650px;
+  @media (max-width: 768px) {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
+
+.worked__statistic-percent {
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 700;
+  font-family: "Sora", sans-serif;
+  padding-block-end: 16px;
+  @media (max-width: 768px) {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
+.worked__statistic-text {
+  @include font($primaryText);
+  color: $secondaryColor;
+}

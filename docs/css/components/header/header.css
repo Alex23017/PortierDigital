@@ -1,6 +1,12 @@
 .header {
   width: 100%;
   max-width: 90rem;
+  padding-inline: 5.625rem;
+}
+@media (max-width: 768px) {
+  .header {
+    padding-inline: 2rem;
+  }
 }
 
 .nav {

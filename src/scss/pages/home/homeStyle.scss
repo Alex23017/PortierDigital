@@ -7,6 +7,13 @@
   display: flex;
   flex-direction: column;
   gap: 76px;
+  @media (max-width: 1024px) {
+    gap: 80px;
+  }
+  @media (max-width: 768px) {
+    padding-block-start: 90px;
+    gap: 60px;
+  }
 }
 .hero__digital {
   max-width: 1093px;
@@ -14,21 +21,37 @@
 .hero__digital-title {
   @include font($primaryHeroTitle);
   padding-block-end: 16px;
+  text-wrap: balance;
+  @media (max-width: 1024px) {
+    font-size: 64px;
+    line-height: 64px;
+  }
+  @media (max-width: 768px) {
+    font-size: 40px;
+    line-height: 48px;
+  }
 }
 .hero__digital-title--product {
   color: $secondaryColor;
 }
 .hero__digital-title--point {
   color: $backgroundGreen;
+  margin-inline-start: -15px;
+  @media (max-width: 768px) {
+    margin-inline-start: -10px;
+  }
 }
 .hero__digital-text {
   @include font($primaryHeroText);
   color: $secondaryColor;
   padding-block-end: 32px;
   max-width: 809px;
+  @media (max-width: 768px) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
-.hero__button {
-}
+
 .button {
   text-align: center;
   background-color: $colorButton;
@@ -42,6 +65,11 @@
   padding-inline: 24px;
   border-radius: 8px;
   white-space: nowrap;
+}
+.hero__button {
+  @media (max-width: 768px) {
+    max-width: 100%;
+  }
 }
 .hero__button-link {
 }

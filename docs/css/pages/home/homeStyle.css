@@ -3,6 +3,17 @@
   flex-direction: column;
   gap: 4.75rem;
 }
+@media (max-width: 1024px) {
+  .hero__container {
+    gap: 5rem;
+  }
+}
+@media (max-width: 768px) {
+  .hero__container {
+    padding-block-start: 5.625rem;
+    gap: 3.75rem;
+  }
+}
 
 .hero__digital {
   max-width: 68.3125rem;
@@ -16,6 +27,19 @@
   line-height: 5.375rem;
   letter-spacing: 0;
   padding-block-end: 1rem;
+  text-wrap: balance;
+}
+@media (max-width: 1024px) {
+  .hero__digital-title {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+}
+@media (max-width: 768px) {
+  .hero__digital-title {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
 }
 
 .hero__digital-title--product {
@@ -24,6 +48,12 @@
 
 .hero__digital-title--point {
   color: #57efb4;
+  margin-inline-start: -0.9375rem;
+}
+@media (max-width: 768px) {
+  .hero__digital-title--point {
+    margin-inline-start: -0.625rem;
+  }
 }
 
 .hero__digital-text {
@@ -32,10 +62,16 @@
   font-style: normal;
   font-size: 1.5rem;
   line-height: 2rem;
-  letter-spacing: -1%;
+  letter-spacing: 0;
   color: #88888d;
   padding-block-end: 2rem;
   max-width: 50.5625rem;
+}
+@media (max-width: 768px) {
+  .hero__digital-text {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
 }
 
 .button {
@@ -51,6 +87,12 @@
   padding-inline: 1.5rem;
   border-radius: 0.5rem;
   white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .hero__button {
+    max-width: 100%;
+  }
 }
 
 .hero__cards {

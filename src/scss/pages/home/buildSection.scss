@@ -1,0 +1,67 @@
+@use "../../variables/variables" as *;
+
+.build {
+  display: flex;
+  align-items: center;
+  gap: 129px;
+  @media (max-width: 1240px) {
+    gap: 86px;
+  }
+  @media (max-width: 992.99px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+  }
+}
+
+.build__column {
+  @media (max-width: 1025px) {
+    object-fit: cover;
+  }
+}
+.build__title {
+  text-wrap: balance;
+  @include font($primaryTitle);
+  padding-block-end: 16px;
+  @media (max-width: 1025px) {
+    padding-block-start: 78px;
+  }
+  @media (max-width: 992.99px) {
+    padding-block-start: 0px;
+  }
+  @media (max-width: 768px) {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
+.build__column--title {
+  max-width: 531px;
+  @media (max-width: 1025px) {
+  }
+}
+.build__text {
+  @include font($primaryText);
+  color: $secondaryColor;
+}
+.build__text--paddding {
+  padding-block: 16px;
+  @media (max-width: 1025px) {
+    padding-block-end: 78px;
+  }
+  @media (max-width: 992.99px) {
+    padding-block-end: 0px;
+  }
+}
+.build__column-img {
+  object-fit: cover;
+  border-radius: 8px;
+  @media (max-width: 1280px) {
+    height: 500px;
+    min-width: 400px;
+  }
+  @media (max-width: 768px) {
+    height: 400px;
+    min-width: 300px;
+  }
+}

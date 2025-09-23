@@ -3,6 +3,10 @@
 .header {
   width: 100%;
   max-width: 1440px;
+  padding-inline: 90px;
+  @media (max-width: 768px) {
+    padding-inline: 32px;
+  }
 }
 .nav {
   display: flex;
@@ -16,7 +20,6 @@
   flex: 1 1;
   @media (max-width: 768px) {
     padding-block: 25px;
-  
   }
 }
 .logo__img {

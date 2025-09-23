@@ -1,9 +1,16 @@
+@charset "UTF-8";
+html,
+body {
+  min-height: 100%;
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+  background-color: #000; /* фон для всего */
+  color: #fff;
+}
+
 body {
   display: flex;
   justify-content: center;
-  background-color: #12121c;
-  color: white;
-  min-height: 100vh;
 }
 
 main {
@@ -16,26 +23,21 @@ main {
   max-width: 90rem;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
-  padding-inline: 5.625rem;
-}
-@media (max-width: 768px) {
-  .wrapper {
-    padding-inline: 2rem;
-  }
 }
 
 [class*=__container] {
   padding-block: 7.5rem;
+  padding-inline: 5.625rem;
 }
-@media (max-width: 1024px) {
+@media (max-width: 1025px) {
   [class*=__container] {
     padding-block: 6.25rem;
   }
 }
-@media (max-width: 414px) {
+@media (max-width: 768px) {
   [class*=__container] {
     padding-block: 2.8125rem;
+    padding-inline: 2rem;
   }
 }
 /*# sourceMappingURL=base.css.map */

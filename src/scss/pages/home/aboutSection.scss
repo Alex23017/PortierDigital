@@ -1,0 +1,46 @@
+@use "../../variables/variables" as *;
+
+.about {
+}
+.about__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 65px;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 60px;
+  }
+}
+
+.about__text {
+  @include font($primaryText);
+  color: $secondaryColor;
+  padding-block-end: 24px;
+}
+.about__body-item {
+  min-width: 145px;
+}
+
+.about__title {
+  @include font($primaryTitle);
+  max-width: 520px;
+  @media (max-width: 768px) {
+    font-size: 32px;
+    line-height: 40px;
+  
+  }
+}
+.about__column--text {
+  max-width: 530px;
+  @media (max-width: 1025px) {
+    max-width: 270px;
+  }
+  @media (max-width: 768px) {
+    min-width: 100%;
+  }
+}
+
+.about__text{
+  width: 100%;
+}

@@ -1,0 +1,154 @@
+.what__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 73px;
+}
+@media (max-width: 992.99px) {
+  .what__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 60px;
+  }
+}
+
+.what__column--what {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.what__body-title {
+  font-family: "Sora", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: 0px;
+  -webkit-padding-after: 16px;
+          padding-block-end: 16px;
+}
+@media (max-width: 768px) {
+  .what__body-title {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
+
+.what__body {
+  max-width: 660px;
+}
+
+.what__body-text,
+.what__text,
+.what__card-text {
+  font-family: "Sora", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0px;
+  color: #88888d;
+}
+
+.what__card-text {
+  -webkit-padding-after: 24px;
+          padding-block-end: 24px;
+}
+
+.what__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 39px;
+}
+@media (max-width: 992.98px) {
+  .what__cards {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+@media (max-width: 768px) {
+  .what__cards {
+    gap: 15px;
+  }
+}
+
+.what__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 438px;
+  gap: 4px;
+}
+
+.what__card--grey {
+  background-color: #222233;
+  border-radius: 8px;
+}
+
+.what__body-img {
+  padding-block: 20px;
+  -webkit-padding-start: 20px;
+          padding-inline-start: 20px;
+}
+
+.what__body-img img {
+  min-width: 44px;
+  min-height: 44px;
+}
+
+.what__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px;
+}
+
+.what__card-title {
+  font-family: "Sora", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 32px;
+  -webkit-padding-after: 4px;
+          padding-block-end: 4px;
+  white-space: nowrap;
+}
+
+.what__card-job {
+  font-family: "Sora", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0px;
+}
+
+@media (max-width: 768px) {
+  .what__text {
+    -webkit-padding-before: 48px;
+            padding-block-start: 48px;
+  }
+}/*# sourceMappingURL=whatSection.css.map */

@@ -1,11 +1,17 @@
 @use "../variables/variables" as *;
 
+html,
+body {
+  min-height: 100%;
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+  background-color: #000; /* фон для всего */
+  color: #fff;
+}
+
 body {
   display: flex;
   justify-content: center;
-  background-color: $backgroundVulcan;
-  color: white;
-  min-height: 100vh;
 }
 main {
   width: 100%;
@@ -17,20 +23,17 @@ main {
   max-width: 1440px;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
-  padding-inline: 90px;
 
-  @media (max-width: 768px) {
-    padding-inline: 32px;
-  }
 }
 
 [class*="__container"] {
   padding-block: 120px;
-  @media (max-width: 1024px) {
+  padding-inline: 90px;
+  @media (max-width: 1025px) {
     padding-block: 100px;
   }
-  @media (max-width: 414px) {
+  @media (max-width: 768px) {
     padding-block: 45px;
+    padding-inline: 32px;
   }
 }
