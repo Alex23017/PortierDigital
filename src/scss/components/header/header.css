@@ -20,13 +20,6 @@
 }
 
 .logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 8px;
   -webkit-box-flex: 1;
       -ms-flex: 1 1;
           flex: 1 1;
@@ -139,4 +132,15 @@
 }
 .burger::after {
   bottom: 8px;
+}
+
+.logo-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+  cursor: pointer;
 }/*# sourceMappingURL=header.css.map */

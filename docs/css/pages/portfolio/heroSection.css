@@ -1,0 +1,160 @@
+.portfolio__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .portfolio__container {
+    padding-block-start: 5.625rem;
+  }
+}
+
+.portfolio__background {
+  position: relative;
+  max-width: 47.5rem;
+  max-height: 27.5rem;
+}
+
+.portfolio__background-img {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 1025px) {
+  .portfolio__background--ds {
+    display: none;
+  }
+}
+
+.portfolio__background--tablet,
+.portfolio__background--mob {
+  display: none;
+}
+
+@media (max-width: 1025px) {
+  .portfolio__background--tablet {
+    display: block;
+  }
+}
+@media (max-width: 768px) {
+  .portfolio__background--tablet {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .portfolio__background--mob {
+    display: block;
+  }
+}
+
+.portfolio__background::after {
+  position: absolute;
+  content: "";
+  background-color: rgba(0, 0, 0, 0.4);
+  inset: 0;
+  z-index: 1;
+}
+
+.portolio__body {
+  position: absolute;
+  z-index: 2;
+  max-width: 40.375rem;
+  left: 5.625rem;
+  top: 28.1875rem;
+}
+@media (min-width: 1600px) {
+  .portolio__body {
+    left: 21.875rem;
+    top: 28.1875rem;
+  }
+}
+@media (max-width: 1025px) {
+  .portolio__body {
+    top: 37.6875rem;
+  }
+}
+@media (max-width: 992.99px) {
+  .portolio__body {
+    position: static;
+    margin-block-start: -6.25rem;
+  }
+}
+
+.portolio__body-title {
+  font-family: "Sora", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 4.5rem;
+  line-height: 5.375rem;
+  letter-spacing: 0;
+}
+@media (max-width: 1025px) {
+  .portolio__body-title {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+}
+@media (max-width: 768px) {
+  .portolio__body-title {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    max-width: 20rem;
+  }
+}
+
+.portolio__body-title--grey {
+  color: #88888d;
+}
+
+.portolio__body-text {
+  color: #88888d;
+  font-family: "Sora", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  letter-spacing: 0;
+  padding-block-start: 1rem;
+}
+
+.portolio__social {
+  font-family: "Sora", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  letter-spacing: 0;
+  position: absolute;
+  top: 39.8125rem;
+  right: 5.625rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  z-index: 2;
+}
+@media (min-width: 1600px) {
+  .portolio__social {
+    right: 25rem;
+  }
+}
+@media (max-width: 1025px) {
+  .portolio__social {
+    top: 43.9375rem;
+  }
+}
+@media (max-width: 768px) {
+  .portolio__social {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-inline: 2rem;
+    width: 100%;
+    right: inherit;
+    padding-block-start: 2.8125rem;
+  }
+}
+
+.hero__portfolio-title--point {
+  color: #57efb4;
+}
+/*# sourceMappingURL=heroSection.css.map */

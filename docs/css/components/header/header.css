@@ -16,9 +16,6 @@
 }
 
 .logo {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
   flex: 1 1;
 }
 @media (max-width: 768px) {
@@ -118,5 +115,12 @@
 }
 .burger::after {
   bottom: 0.5rem;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
 }
 /*# sourceMappingURL=header.css.map */

@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* ===============================
    Modern CSS Reset / Full Reset
    =============================== */
@@ -105,7 +104,7 @@ body {
   min-height: 100%;
   font-family: sans-serif;
   scroll-behavior: smooth;
-  background-color: #000; /* фон для всего */
+  background-color: #12121c;
   color: #fff;
 }
 
@@ -151,6 +150,188 @@ main {
     padding-block: 45px;
     padding-inline: 32px;
   }
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+  background-color: #12121c;
+  color: #fff;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100%;
+  width: 100%;
+  max-width: 1440px;
+}
+
+.main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.portfolio__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.portfolio__background {
+  position: relative;
+  max-width: 760px;
+  max-height: 440px;
+}
+
+.portfolio__background-img {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 1025px) {
+  .portfolio__background--ds {
+    display: none;
+  }
+}
+
+.portfolio__background--tablet,
+.portfolio__background--mob {
+  display: none;
+}
+
+@media (max-width: 1025px) {
+  .portfolio__background--tablet {
+    display: block;
+  }
+}
+
+.portfolio__background::after {
+  position: absolute;
+  content: "";
+  background-color: rgba(0, 0, 0, 0.4);
+  inset: 0;
+  z-index: 1;
+}
+
+.portolio__body {
+  position: absolute;
+  z-index: 2;
+  max-width: 646px;
+  left: 90px;
+  top: 451px;
+}
+@media (max-width: 1025px) {
+  .portolio__body {
+    top: 603px;
+  }
+}
+@media (max-width: 992.99px) {
+  .portolio__body {
+    position: static;
+    -webkit-margin-before: -100px;
+            margin-block-start: -100px;
+  }
+}
+
+.portolio__body-title {
+  font-family: "Sora", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 72px;
+  line-height: 86px;
+  letter-spacing: 0px;
+}
+@media (max-width: 1025px) {
+  .portolio__body-title {
+    font-size: 64px;
+    line-height: 64px;
+  }
+}
+
+.portolio__body-title--grey {
+  color: #88888d;
+}
+
+.portolio__body-text {
+  color: #88888d;
+  font-family: "Sora", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0px;
+  -webkit-padding-before: 16px;
+          padding-block-start: 16px;
+}
+
+.portolio__social {
+  font-family: "Sora", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0px;
+  position: absolute;
+  top: 637px;
+  right: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 8px;
+  z-index: 2;
+}
+@media (max-width: 1025px) {
+  .portolio__social {
+    top: 703px;
+  }
+}
+@media (max-width: 768px) {
+  .portolio__social {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-inline: 32px;
+    width: 100%;
+    right: inherit;
+  }
+}
+
+.hero__portfolio-title--point {
+  color: #57efb4;
 }
 
 .hero__container {
@@ -370,6 +551,103 @@ main {
   }
 }
 
+.card__sports,
+.card__corporiate,
+.card__sidebar {
+  position: relative;
+}
+
+.card__sports img,
+.card__corporiate img,
+.card__sidebar img {
+  width: 100%;
+  max-height: 750px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 8px;
+}
+
+.card__footer {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  padding-inline: 40px;
+  bottom: 40px;
+  gap: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media (max-width: 1025px) {
+  .card__footer {
+    padding-inline: 30px;
+    bottom: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .card__footer {
+    -webkit-padding-start: 0px;
+            padding-inline-start: 0px;
+    -webkit-padding-end: 15px;
+            padding-inline-end: 15px;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+.card__footer-link {
+  padding: 15px;
+  background-color: #222233;
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card__footer-link img {
+  min-width: 15px;
+  height: 15px;
+}
+
+.card__footer-text p {
+  padding: 20px;
+  background-color: #222233;
+  border-radius: 8px;
+  font-family: "Sora", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0px;
+}
+@media (max-width: 768px) {
+  .card__footer-text p {
+    padding-block: 10px;
+    padding-inline: 15px;
+  }
+}
+
+.card__footer-link {
+  width: 44px;
+  height: 44px;
+  cursor: pointer;
+}
+
+.card__footer-link--green {
+  background-color: #57efb4;
+}
+
 .build {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -469,6 +747,7 @@ main {
 .build__column-img {
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 8px;
 }
 @media (max-width: 1280px) {
   .build__column-img {
@@ -478,9 +757,8 @@ main {
 }
 @media (max-width: 768px) {
   .build__column-img {
-    min-width: 350px;
-    max-width: 350px;
-    max-height: 400px;
+    height: 400px;
+    min-width: 300px;
   }
 }
 
@@ -829,13 +1107,6 @@ main {
 }
 
 .logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 8px;
   -webkit-box-flex: 1;
       -ms-flex: 1 1;
           flex: 1 1;
@@ -950,6 +1221,17 @@ main {
   bottom: 8px;
 }
 
+.logo-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
 .footer {
   width: 100%;
 }
@@ -1006,6 +1288,16 @@ main {
   }
   .footer__contact > div {
     width: 159px;
+  }
+}
+@media (max-width: 400px) {
+  .footer__contact > div {
+    width: 100px;
+  }
+}
+@media (max-width: 400px) {
+  .footer__contact {
+    place-items: center;
   }
 }
 

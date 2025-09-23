@@ -1,0 +1,122 @@
+@use "../../variables/variables" as *;
+
+.portfolio-hero {
+}
+.portfolio__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media (max-width: 768px) {
+    padding-block-start: 90px;
+  
+  }
+}
+
+.portfolio__background {
+  position: relative;
+  max-width: 760px;
+  max-height: 440px;
+}
+.portfolio__background-img {
+  width: 100%;
+  height: auto;
+}
+.portfolio__background--ds {
+  @media (max-width: 1025px) {
+    display: none;
+  }
+}
+
+.portfolio__background--tablet,
+.portfolio__background--mob {
+  display: none;
+}
+.portfolio__background--tablet {
+  @media (max-width: 1025px) {
+    display: block;
+  }
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+.portfolio__background--mob {
+  @media (max-width: 768px) {
+    display: block;
+  }
+}
+
+.portfolio__background::after {
+  position: absolute;
+  content: "";
+  background-color: rgba(0, 0, 0, 0.4);
+  inset: 0;
+  z-index: 1;
+}
+
+.portolio__body {
+  position: absolute;
+  z-index: 2;
+  max-width: 646px;
+  left: 90px;
+  top: 451px;
+  @media (min-width: 1600px) {
+  left: 350px;
+  top: 451px;
+  }
+  @media (max-width: 1025px) {
+    top: 603px;
+  }
+  @media (max-width: 992.99px) {
+    position: static;
+    margin-block-start: -100px;
+  }
+}
+.portolio__body-title {
+  @include font($primaryHeroTitle);
+  @media (max-width: 1025px) {
+    font-size: 64px;
+    line-height: 64px;
+  }
+  @media (max-width: 768px) {
+    font-size: 40px;
+    line-height: 48px;
+    max-width: 320px;
+  }
+}
+.portolio__body-title--grey {
+  color: $secondaryColor;
+}
+.portolio__body-text {
+  color: $secondaryColor;
+  @include font($primaryHeroText);
+  padding-block-start: 16px;
+}
+.portolio__social {
+  @include font($primaryText);
+  position: absolute;
+  top: 637px;
+  right: 90px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  z-index: 2;
+  @media (min-width: 1600px) {
+    right: 400px;
+  }
+  @media (max-width: 1025px) {
+    top: 703px;
+  }
+  @media (max-width: 768px) {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-inline: 32px;
+    width: 100%;
+    right: inherit;
+    padding-block-start: 45px;
+  }
+}
+.portolio__social-link {
+}
+.hero__portfolio-title--point {
+  color: $backgroundGreen;
+}

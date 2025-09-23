@@ -5,7 +5,7 @@ body {
   min-height: 100%;
   font-family: sans-serif;
   scroll-behavior: smooth;
-  background-color: #000; /* фон для всего */
+  background-color: $backgroundVulcan;
   color: #fff;
 }
 
@@ -23,7 +23,6 @@ main {
   max-width: 1440px;
   flex-direction: column;
   align-items: center;
-
 }
 
 [class*="__container"] {

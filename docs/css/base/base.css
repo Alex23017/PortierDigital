@@ -1,10 +1,9 @@
-@charset "UTF-8";
 html,
 body {
   min-height: 100%;
   font-family: sans-serif;
   scroll-behavior: smooth;
-  background-color: #000; /* фон для всего */
+  background-color: #12121c;
   color: #fff;
 }
 
