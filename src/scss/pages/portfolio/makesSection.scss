@@ -16,6 +16,13 @@
   align-items: center;
   text-align: center;
   padding-block-end: 48px;
+  @media (max-width: 992.99px) {
+    text-align: center;
+    @media (max-width: 600px) {
+      text-align: start;
+      align-items: flex-start;
+    }
+  }
 }
 .makes__body-title {
   padding-block-end: 16px;

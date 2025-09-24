@@ -36,7 +36,6 @@
 }
 
 .build__title {
-  text-wrap: balance;
   font-family: "Sora", sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -56,12 +55,14 @@
   .build__title {
     -webkit-padding-before: 0px;
             padding-block-start: 0px;
+    text-align: center;
   }
 }
 @media (max-width: 768px) {
   .build__title {
     font-size: 32px;
     line-height: 40px;
+    text-align: start;
   }
 }
 

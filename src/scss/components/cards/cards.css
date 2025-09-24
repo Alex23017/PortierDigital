@@ -16,6 +16,24 @@
   }
 }
 
+.makes__cards {
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+@media (max-width: 1025px) {
+  .makes__cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  .makes__cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
 .hero__card {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -25,6 +43,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 20px;
+  width: 100%;
   max-width: 402px;
 }
 

@@ -13,6 +13,9 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     gap: 60px;
   }
 }
@@ -29,6 +32,11 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+@media (max-width: 992.98px) {
+  .what__column--what {
+    max-width: 531px;
+  }
+}
 
 .what__body-title {
   font-family: "Sora", sans-serif;
@@ -40,10 +48,16 @@
   -webkit-padding-after: 16px;
           padding-block-end: 16px;
 }
+@media (max-width: 992.99px) {
+  .what__body-title {
+    text-align: center;
+  }
+}
 @media (max-width: 768px) {
   .what__body-title {
     font-size: 32px;
     line-height: 40px;
+    text-align: start;
   }
 }
 

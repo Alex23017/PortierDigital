@@ -19,6 +19,12 @@
 
 .companies__body {
   max-width: 646px;
+  @media (max-width: 992.99px) {
+    text-align: center;
+    @media (max-width: 600px) {
+      text-align: start;
+    }
+  }
 }
 .companies__cards {
   display: flex;
@@ -29,7 +35,18 @@
     align-items: center;
   }
 }
-
+.companies__body-title {
+  @include font($primaryTitle);
+  @media (max-width: 768px) {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
+.companies__body-text {
+  @include font($primaryText);
+  color: $secondaryColor;
+  padding-block-start: 16px;
+}
 .companies__body-img {
   padding: 15px;
   border-radius: 22px;
@@ -67,8 +84,14 @@
   @media (max-width: 1025px) {
     max-width: 296px;
   }
+  @media (max-width: 992.99px) {
+    text-align: center;
+  }
   @media (max-width: 768px) {
     width: 100%;
     max-width: 100%;
+  }
+  @media (max-width: 600px) {
+    text-align: start;
   }
 }

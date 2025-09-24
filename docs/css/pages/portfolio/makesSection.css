@@ -21,6 +21,17 @@
   text-align: center;
   padding-block-end: 3rem;
 }
+@media (max-width: 992.99px) {
+  .makes__body {
+    text-align: center;
+  }
+}
+@media (max-width: 992.99px) and (max-width: 600px) {
+  .makes__body {
+    text-align: start;
+    align-items: flex-start;
+  }
+}
 
 .makes__body-title {
   padding-block-end: 1rem;
