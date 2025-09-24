@@ -1,0 +1,24 @@
+.arrow__body {
+  position: fixed;
+  opacity: 0;
+  visibility: hidden;
+  bottom: 2%;
+  right: 30px;
+  padding: 25px;
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 2px 2px 5px 0 rgba(248, 247, 247, 0.986);
+  z-index: 2000;
+  border-radius: 50px;
+  transition: 0.3s ease-in-out;
+  &.active {
+    opacity: 1;
+    visibility: visible;
+    &:active {
+        transform: scale(0.9);
+    }
+  }
+}
+.arrow__img {
+  width: 50px;
+  height: auto;
+}

@@ -1,0 +1,2 @@
+(()=>{"use strict";document.addEventListener("DOMContentLoaded",()=>{const e=document.querySelector(".arrow__body");window.addEventListener("scroll",()=>{window.scrollY>600?e.classList.add("active"):e.classList.remove("active")}),e.addEventListener("click",()=>{window.scrollTo({top:0,behavior:"smooth"})})})})();
+//# sourceMappingURL=main.bundle.js.map
