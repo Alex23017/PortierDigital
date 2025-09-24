@@ -26,9 +26,13 @@
 .worked__title {
   @include font($primaryTitle);
   max-width: 650px;
+  @media (max-width: 992.99px) {
+    text-align: center;
+  }
   @media (max-width: 768px) {
     font-size: 32px;
     line-height: 40px;
+    text-align: start;
   }
 }
 

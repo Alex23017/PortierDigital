@@ -6,6 +6,7 @@
 @media (max-width: 992.99px) {
   .what__container {
     flex-direction: column;
+    align-items: center;
     gap: 3.75rem;
   }
 }
@@ -14,6 +15,11 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+@media (max-width: 992.98px) {
+  .what__column--what {
+    max-width: 33.1875rem;
+  }
 }
 
 .what__body-title {
@@ -25,10 +31,16 @@
   letter-spacing: 0;
   padding-block-end: 1rem;
 }
+@media (max-width: 992.99px) {
+  .what__body-title {
+    text-align: center;
+  }
+}
 @media (max-width: 768px) {
   .what__body-title {
     font-size: 2rem;
     line-height: 2.5rem;
+    text-align: start;
   }
 }
 

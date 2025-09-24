@@ -21,7 +21,6 @@
   }
 }
 .build__title {
-  text-wrap: balance;
   @include font($primaryTitle);
   padding-block-end: 16px;
   @media (max-width: 1025px) {
@@ -29,10 +28,12 @@
   }
   @media (max-width: 992.99px) {
     padding-block-start: 0px;
+    text-align: center;
   }
   @media (max-width: 768px) {
     font-size: 32px;
     line-height: 40px;
+    text-align: start;
   }
 }
 .build__column--title {

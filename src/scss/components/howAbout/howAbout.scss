@@ -1,7 +1,4 @@
 @use "../../variables/variables" as *;
-
-.about {
-}
 .about__container {
   display: flex;
   justify-content: space-between;
@@ -28,7 +25,6 @@
   @media (max-width: 768px) {
     font-size: 32px;
     line-height: 40px;
-  
   }
 }
 .about__column--text {
@@ -41,6 +37,6 @@
   }
 }
 
-.about__text{
+.about__text {
   width: 100%;
 }
