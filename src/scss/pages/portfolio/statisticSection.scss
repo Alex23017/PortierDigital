@@ -1,0 +1,35 @@
+@use "../../variables/variables" as *;
+
+.statistic__container {
+}
+.statistic__cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 94px;
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+.statistic__card {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  text-align: center;
+  max-width: 399px;
+  gap: 16px;
+  @media (max-width: 1025px) {
+    max-width: 190px;
+  }
+  @media (max-width: 768px) {
+    max-width: inherit;
+    width: 100%;
+  }
+}
+.statistic__card-title {
+  @include font($primaryTitle);
+  text-wrap: balance;
+}
+.statistic__card-text {
+  @include font($primaryText);
+  color: $secondaryColor;
+}

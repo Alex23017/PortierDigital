@@ -1,0 +1,62 @@
+@use "../../variables/variables" as *;
+.hero__cards {
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 35px;
+  @media (max-width: 1025px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.makes__cards {
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  @media (max-width: 1025px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.hero__card {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  max-width: 402px;
+}
+.hero__card--grey {
+  background-color: $backgroundFooter;
+  border-radius: 8px;
+}
+.hero__card-icon {
+  max-width: 44px;
+  max-height: 44px;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: $backgroundFooter;
+  img {
+    width: 15px;
+    height: 15px;
+  }
+  &--green {
+    background-color: $backgroundGreen;
+  }
+}
+
+.hero__card-title {
+  padding-block-start: 24px;
+  padding-block-end: 16px;
+  @include font($primaryCardsTitle);
+}
+.hero__card-title-text {
+  @include font($primaryText);
+  color: $secondaryColor;
+}

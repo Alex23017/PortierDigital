@@ -4,6 +4,7 @@
   display: none;
   width: 26px;
   height: 18px;
+  z-index: 9999;
   @media (max-width: 768px) {
     display: flex;
     flex-direction: column;

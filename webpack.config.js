@@ -8,7 +8,9 @@ export default {
   mode: "production",
   entry: {
     main: "./src/js/main.js",
-    burger: "./src/js/burger.js"
+    burger: "./src/js/burger.js",
+    cardsHero: "./src/js/cardsHero.js",
+    cardsPortfolio: "./src/js/cardsPortfolio.js",
   },
   output: {
     filename: "[name].bundle.js",
