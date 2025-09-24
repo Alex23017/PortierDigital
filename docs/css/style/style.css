@@ -140,6 +140,18 @@ main {
   }
 }
 
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  width: 100%;
+  max-width: 90rem;
+}
+
+.main {
+  flex: 1;
+}
+
 .portfolio__container {
   display: flex;
   flex-direction: column;
