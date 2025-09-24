@@ -17,8 +17,14 @@
         transform: scale(0.9);
     }
   }
+  @media (max-width: 992.99px) {
+    padding: 15px;
+  }
 }
 .arrow__img {
   width: 50px;
   height: auto;
+  @media (max-width: 992.99px) {
+    width: 35px;
+  }
 }
