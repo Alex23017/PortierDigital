@@ -1,27 +1,27 @@
-@use "../../variables/variables" as *;
-html,
-body {
-  height: 100%;
-  margin: 0;
-  font-family: sans-serif;
-  scroll-behavior: smooth;
-  background-color: $backgroundVulcan;
-  color: #fff;
-}
+// @use "../../variables/variables" as *;
+// html,
+// body {
+//     min-height: 100%;
+//   margin: 0;
+//   font-family: sans-serif;
+//   scroll-behavior: smooth;
+//   background-color: $backgroundVulcan;
+//   color: #fff;
+// }
 
-body {
-  display: flex;
-  justify-content: center;
-}
+// body {
+//   display: flex;
+//   justify-content: center;
+// }
 
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
-  width: 100%;
-  max-width: 1440px;
-}
+// .wrapper {
+//   display: flex;
+//   flex-direction: column;
+//   min-height: 100%;
+//   width: 100%;
+//   max-width: 1440px;
+// }
 
-.main {
-  flex: 1;
-}
+// .main {
+//   flex: 1;
+// }

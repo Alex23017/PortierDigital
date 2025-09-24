@@ -111,12 +111,13 @@
 }
 @media (max-width: 1025px) {
   .companies__card {
-    min-width: 350px;
+    max-width: 296px;
   }
 }
 @media (max-width: 992.99px) {
   .companies__card {
     min-width: 200px;
+    max-width: 350px;
     width: 100%;
   }
 }
@@ -126,13 +127,16 @@
 }
 
 .companies__column {
-  width: 50%;
-  max-width: 439px;
-}
-@media (max-width: 1025px) {
-  .companies__column {
-    max-width: 296px;
-  }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 @media (max-width: 992.99px) {
   .companies__column {
@@ -148,5 +152,34 @@
 @media (max-width: 600px) {
   .companies__column {
     text-align: start;
+  }
+}
+
+.companies__column--text {
+  max-width: 646px;
+}
+@media (max-width: 1025px) {
+  .companies__column--text {
+    max-width: 438px;
+  }
+}
+@media (max-width: 768px) {
+  .companies__column--text {
+    max-width: 100%;
+  }
+}
+
+.companies__column--cards {
+  max-width: 438px;
+  width: 100%;
+}
+@media (max-width: 1025px) {
+  .companies__column--cards {
+    max-width: 290px;
+  }
+}
+@media (max-width: 768px) {
+  .companies__column--cards {
+    max-width: 100%;
   }
 }/*# sourceMappingURL=companiesSection.css.map */

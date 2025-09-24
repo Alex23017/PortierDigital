@@ -5,6 +5,7 @@
 .footer__container {
   display: flex;
   flex-direction: column;
+  max-width: 90rem;
   background-color: #222233;
 }
 

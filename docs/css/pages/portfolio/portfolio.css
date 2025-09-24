@@ -1,27 +1,2 @@
-html,
-body {
-  height: 100%;
-  margin: 0;
-  font-family: sans-serif;
-  scroll-behavior: smooth;
-  background-color: #12121c;
-  color: #fff;
-}
 
-body {
-  display: flex;
-  justify-content: center;
-}
-
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
-  width: 100%;
-  max-width: 90rem;
-}
-
-.main {
-  flex: 1;
-}
 /*# sourceMappingURL=portfolio.css.map */
