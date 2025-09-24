@@ -1,0 +1,2 @@
+(()=>{"use strict";const e=document.querySelector("#burger"),t=document.querySelector(".nav__list"),s=document.querySelector(".burger__wrapper"),c=document.body;e.addEventListener("click",()=>{t.classList.toggle("active"),s.classList.toggle("active"),e.classList.toggle("active"),s.classList.contains("active")?c.style.overflow="hidden":c.style.overflow="",e.classList.contains("active")?e.style.transform="translateX(-50px)":e.style.transform=""})})();
+//# sourceMappingURL=burger.bundle.js.map

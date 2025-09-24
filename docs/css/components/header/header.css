@@ -54,6 +54,7 @@
   justify-content: center;
   gap: 2.5rem;
   padding-block: 2.25rem;
+  transition: all 0.3s ease-in-out;
 }
 @media (max-width: 768px) {
   .nav__list {
@@ -83,38 +84,6 @@
   padding-inline: 1.5rem;
   border-radius: 0.5rem;
   background-color: #222233;
-}
-
-.burger {
-  display: none;
-  width: 1.625rem;
-  height: 1.125rem;
-}
-@media (max-width: 768px) {
-  .burger {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    gap: 0.375rem;
-    cursor: pointer;
-  }
-}
-.burger::before, .burger::after,
-.burger span::before {
-  position: absolute;
-  content: "";
-  width: 1.625rem;
-  height: 0.125rem;
-  background-color: #ffffff;
-}
-.burger::before {
-  top: 0;
-}
-.burger span::before {
-  bottom: 0;
-}
-.burger::after {
-  bottom: 0.5rem;
 }
 
 .logo-link {

@@ -1,0 +1,100 @@
+.burger {
+  display: none;
+  width: 1.625rem;
+  height: 1.125rem;
+}
+@media (max-width: 768px) {
+  .burger {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 0.375rem;
+    cursor: pointer;
+  }
+}
+.burger::before, .burger::after,
+.burger span::before {
+  position: absolute;
+  content: "";
+  width: 1.625rem;
+  height: 0.125rem;
+  background-color: #ffffff;
+  transition: all 0.3s ease-in-out;
+}
+.burger::before {
+  top: 0;
+}
+.burger span::before {
+  bottom: 0;
+}
+.burger::after {
+  bottom: 0.5rem;
+}
+.burger.active::before {
+  width: 1.125rem;
+}
+.burger.active::after {
+  width: 1.125rem;
+}
+.burger.active span::before {
+  width: 1.125rem;
+}
+
+.burger__wrapper {
+  position: fixed;
+  inset: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+  background-color: #222233;
+  transform: translateX(-100%);
+  z-index: 1200;
+}
+.burger__wrapper.active {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-10%);
+}
+
+.burger__body {
+  position: relative;
+  z-index: 999;
+}
+
+.nav__list-burger {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-block-start: 3.125rem;
+  text-align: center;
+  gap: 1.875rem;
+}
+
+.nav__link-burger {
+  opacity: 0.7;
+  transition: 0.1s ease-in-out;
+}
+.nav__link-burger:hover {
+  opacity: 1;
+}
+
+.nav__item-burger--template:active {
+  transform: scale(0.9);
+}
+
+.nav__link-burger--template {
+  background-color: #006ada;
+  transition: 0.1s ease-in-out;
+}
+
+.logo__burger {
+  filter: drop-shadow(0.25rem 0.25rem 0.375rem rgb(255, 255, 255));
+}
+
+.logo__burger .logo {
+  padding-block: 0.625rem;
+  margin-inline-end: 1.875rem;
+}
+/*# sourceMappingURL=burger.css.map */

@@ -66,6 +66,8 @@
           justify-content: center;
   gap: 40px;
   padding-block: 36px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 @media (max-width: 768px) {
   .nav__list {
@@ -95,43 +97,6 @@
   padding-inline: 24px;
   border-radius: 8px;
   background-color: #222233;
-}
-
-.burger {
-  display: none;
-  width: 26px;
-  height: 18px;
-}
-@media (max-width: 768px) {
-  .burger {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    position: relative;
-    gap: 6px;
-    cursor: pointer;
-  }
-}
-.burger::before, .burger::after,
-.burger span::before {
-  position: absolute;
-  content: "";
-  width: 26px;
-  height: 2px;
-  background-color: #ffffff;
-}
-.burger::before {
-  top: 0;
-}
-.burger span::before {
-  bottom: 0;
-}
-.burger::after {
-  bottom: 8px;
 }
 
 .logo-link {

@@ -8,6 +8,7 @@ export default {
   mode: "production",
   entry: {
     main: "./src/js/main.js",
+    burger: "./src/js/burger.js"
   },
   output: {
     filename: "[name].bundle.js",

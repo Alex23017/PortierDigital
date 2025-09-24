@@ -57,13 +57,15 @@
   }
 }
 @media (max-width: 400px) {
-  .footer__contact > div {
-    width: 100px;
-  }
-}
-@media (max-width: 400px) {
   .footer__contact {
     place-items: center;
+    -webkit-column-gap: 16px;
+       -moz-column-gap: 16px;
+            column-gap: 16px;
+  }
+  .footer__contact > div {
+    width: 100px;
+    white-space: nowrap;
   }
 }
 

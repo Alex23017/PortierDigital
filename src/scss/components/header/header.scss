@@ -43,9 +43,13 @@
   justify-content: center;
   gap: 40px;
   padding-block: 36px;
+  transition: all 0.3s ease-in-out;
+
   @media (max-width: 768px) {
     display: none;
+
   }
+
 }
 
 .nav__link {
@@ -69,38 +73,6 @@
   padding-inline: 24px;
   border-radius: 8px;
   background-color: #222233;
-}
-
-.burger {
-  display: none;
-  width: 26px;
-  height: 18px;
-  @media (max-width: 768px) {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    gap: 6px;
-    cursor: pointer;
-  }
-
-  &::before,
-  &::after,
-  span::before {
-    position: absolute;
-    content: "";
-    width: 26px;
-    height: 2px;
-    background-color: $primaryColor;
-  }
-  &::before {
-    top: 0;
-  }
-  span::before {
-    bottom: 0;
-  }
-  &::after {
-    bottom: 8px;
-  }
 }
 
 .logo-link {
