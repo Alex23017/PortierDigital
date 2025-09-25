@@ -61,7 +61,7 @@
   z-index: 2;
   max-width: 40.375rem;
   left: 5.625rem;
-  top: 28.1875rem;
+  top: 27.9375rem;
 }
 @media (min-width: 1600px) {
   .portolio__body {
@@ -71,13 +71,14 @@
 }
 @media (max-width: 1025px) {
   .portolio__body {
-    top: 37.6875rem;
+    top: 37.5rem;
+    left: 5.75rem;
   }
 }
 @media (max-width: 992.99px) {
   .portolio__body {
     position: static;
-    margin-block-start: -6.25rem;
+    margin-block-start: -5rem;
   }
 }
 
@@ -99,7 +100,8 @@
   .portolio__body-title {
     font-size: 2.5rem;
     line-height: 3rem;
-    max-width: 20rem;
+    max-width: 21.875rem;
+    letter-spacing: -0.025rem;
   }
 }
 
@@ -126,7 +128,7 @@
   line-height: 1.5rem;
   letter-spacing: 0;
   position: absolute;
-  top: 39.8125rem;
+  top: 39.625rem;
   right: 5.625rem;
   display: flex;
   flex-direction: column;
@@ -140,7 +142,7 @@
 }
 @media (max-width: 1025px) {
   .portolio__social {
-    top: 43.9375rem;
+    top: 45rem;
   }
 }
 @media (max-width: 768px) {
@@ -150,7 +152,7 @@
     padding-inline: 2rem;
     width: 100%;
     right: inherit;
-    padding-block-start: 2.8125rem;
+    padding-block-start: 3.125rem;
   }
 }
 

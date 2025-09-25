@@ -69,7 +69,7 @@
   z-index: 2;
   max-width: 646px;
   left: 90px;
-  top: 451px;
+  top: 447px;
 }
 @media (min-width: 1600px) {
   .portolio__body {
@@ -79,14 +79,15 @@
 }
 @media (max-width: 1025px) {
   .portolio__body {
-    top: 603px;
+    top: 600px;
+    left: 92px;
   }
 }
 @media (max-width: 992.99px) {
   .portolio__body {
     position: static;
-    -webkit-margin-before: -100px;
-            margin-block-start: -100px;
+    -webkit-margin-before: -80px;
+            margin-block-start: -80px;
   }
 }
 
@@ -108,7 +109,8 @@
   .portolio__body-title {
     font-size: 40px;
     line-height: 48px;
-    max-width: 320px;
+    max-width: 350px;
+    letter-spacing: -0.4px;
   }
 }
 
@@ -136,7 +138,7 @@
   line-height: 24px;
   letter-spacing: 0px;
   position: absolute;
-  top: 637px;
+  top: 634px;
   right: 90px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -155,7 +157,7 @@
 }
 @media (max-width: 1025px) {
   .portolio__social {
-    top: 703px;
+    top: 720px;
   }
 }
 @media (max-width: 768px) {
@@ -170,8 +172,8 @@
     padding-inline: 32px;
     width: 100%;
     right: inherit;
-    -webkit-padding-before: 45px;
-            padding-block-start: 45px;
+    -webkit-padding-before: 50px;
+            padding-block-start: 50px;
   }
 }
 

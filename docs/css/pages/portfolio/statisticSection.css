@@ -1,7 +1,7 @@
 .statistic__cards {
   display: flex;
   justify-content: space-between;
-  gap: 5.875rem;
+  gap: 2rem;
 }
 @media (max-width: 768px) {
   .statistic__cards {
@@ -19,7 +19,7 @@
 }
 @media (max-width: 1025px) {
   .statistic__card {
-    max-width: 11.875rem;
+    max-width: 13.6875rem;
   }
 }
 @media (max-width: 768px) {
@@ -30,13 +30,28 @@
 }
 
 .statistic__card-title {
+  font-size: 4rem;
+  line-height: 4rem;
+  text-wrap: balance;
+  letter-spacing: 0.03125rem;
   font-family: "Sora", sans-serif;
   font-weight: 700;
-  font-style: normal;
-  font-size: 3rem;
-  line-height: 3.5rem;
-  letter-spacing: -0.0625rem;
-  text-wrap: balance;
+}
+@media (max-width: 1025px) {
+  .statistic__card-title {
+    font-family: "Sora", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 3rem;
+    line-height: 3.5rem;
+    letter-spacing: -0.0625rem;
+  }
+}
+@media (max-width: 768px) {
+  .statistic__card-title {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
 }
 
 .statistic__card-text {
@@ -47,5 +62,16 @@
   line-height: 1.5rem;
   letter-spacing: 0;
   color: #88888d;
+}
+@media (max-width: 768px) {
+  .statistic__card-text {
+    text-align: start;
+    width: 22.1875rem;
+  }
+}
+@media (max-width: 600px) {
+  .statistic__card-text {
+    letter-spacing: 0;
+  }
 }
 /*# sourceMappingURL=statisticSection.css.map */

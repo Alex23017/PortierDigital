@@ -1,0 +1,88 @@
+@use "../../variables/variables" as *;
+
+.about-page .about__container {
+  padding-block: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 97px;
+  @media (max-width: 1025px) {
+    padding-block-start: 150px;
+    padding-block-end: 100px;
+    gap: 105px;
+  }
+  @media (max-width: 768px) {
+    padding-block: 100px;
+  }
+}
+.love__body {
+  width: 100%;
+}
+
+.love__body-title {
+  @include font($primaryHeroTitle);
+  max-width: 809px;
+  @media (max-width: 1025px) {
+    font-size: 64px;
+    line-height: 64px;
+  }
+  @media (max-width: 768px) {
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -0.4px;
+  }
+}
+.love__body-title--grey {
+  color: $secondaryColor;
+}
+.portier__body {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  width: 100%;
+  &::before {
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 100%;
+    left: 0;
+    top: -50px;
+    background-color: $backgroundFooter;
+    @media (max-width: 1025px) {
+    }
+  }
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+.portier__button {
+  min-width: 158px;
+  max-height: 52px;
+  @media (max-width: 768px) {
+    max-width: inherit;
+  }
+}
+
+.about-page .button {
+  max-width: inherit;
+}
+.about-page .button {
+}
+
+.button {
+}
+.portier__link {
+}
+.portier__text {
+  max-width: 611px;
+  color: $secondaryColor;
+  @include font($primaryHeroText);
+  @media (max-width: 1025px) {
+    max-width: 491px;
+  }
+  @media (max-width: 768px) {
+    font-size: 16px;
+    line-height: 24px;
+    padding-block-start: 48px;
+    letter-spacing: 0px;
+  }
+}

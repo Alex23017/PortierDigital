@@ -68,6 +68,11 @@
   margin-block-start: -0.3125rem;
   letter-spacing: 0.03125rem;
 }
+@media (max-width: 768px) {
+  .footer__copy-title {
+    margin-block-start: -0.25rem;
+  }
+}
 
 .footer__copy {
   display: flex;

@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="css/style/style.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Sora:400,600,700&display=swap"
       rel="stylesheet"
@@ -13,19 +14,22 @@
       href="https://fonts.googleapis.com/css?family=DM+Sans:700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/style/style.css" />
   </head>
-
   <body>
     <div class="wrapper">
-      <header class="header">@@include("../components/header/header.html")</header>
-
+      <header class="header header-portfolio">@@include("../components/header/header.html")</header>
       <main class="main">
-        @@include("../pages/aboutme/heroSection.html") @@include("../pages/aboutme/imgSection.html")
+        @@include("../pages/portfolio/heroSection.html")
+        @@include("../pages/portfolio/makesSection.html")
+        @@include("../pages/portfolio/statisticSection.html")
+        @@include("../pages/portfolio/companiesSection.html")
         @@include("../components/howAbout/howAbout.html")
         @@include("../components/arrowUp/arrowUp.html")
       </main>
       <footer class="footer">@@include("../components/footer/footer.html")</footer>
     </div>
+    <script defer src="js/main.bundle.js"></script>
+    <script defer src="js/burger.bundle.js"></script>
+    <script defer src="js/cardsPortfolio.bundle.js"></script>
   </body>
 </html>

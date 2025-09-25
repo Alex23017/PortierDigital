@@ -87,6 +87,12 @@
           margin-block-start: -5px;
   letter-spacing: 0.5px;
 }
+@media (max-width: 768px) {
+  .footer__copy-title {
+    -webkit-margin-before: -4px;
+            margin-block-start: -4px;
+  }
+}
 
 .footer__copy {
   display: -webkit-box;

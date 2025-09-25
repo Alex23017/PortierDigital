@@ -5,7 +5,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  gap: 94px;
+  gap: 32px;
 }
 @media (max-width: 768px) {
   .statistic__cards {
@@ -31,7 +31,7 @@
 }
 @media (max-width: 1025px) {
   .statistic__card {
-    max-width: 190px;
+    max-width: 219px;
   }
 }
 @media (max-width: 768px) {
@@ -42,13 +42,28 @@
 }
 
 .statistic__card-title {
+  font-size: 64px;
+  line-height: 64px;
+  text-wrap: balance;
+  letter-spacing: 0.5px;
   font-family: "Sora", sans-serif;
   font-weight: 700;
-  font-style: normal;
-  font-size: 48px;
-  line-height: 56px;
-  letter-spacing: -1px;
-  text-wrap: balance;
+}
+@media (max-width: 1025px) {
+  .statistic__card-title {
+    font-family: "Sora", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: -1px;
+  }
+}
+@media (max-width: 768px) {
+  .statistic__card-title {
+    font-size: 40px;
+    line-height: 48px;
+  }
 }
 
 .statistic__card-text {
@@ -59,4 +74,15 @@
   line-height: 24px;
   letter-spacing: 0px;
   color: #88888d;
+}
+@media (max-width: 768px) {
+  .statistic__card-text {
+    text-align: start;
+    width: 355px;
+  }
+}
+@media (max-width: 600px) {
+  .statistic__card-text {
+    letter-spacing: 0px;
+  }
 }/*# sourceMappingURL=statisticSection.css.map */

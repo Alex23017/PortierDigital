@@ -7,6 +7,13 @@
           justify-content: space-between;
   gap: 110px;
 }
+@media (max-width: 1025px) {
+  .companies__container {
+    -webkit-box-pack: inherit;
+        -ms-flex-pack: inherit;
+            justify-content: inherit;
+  }
+}
 @media (max-width: 768px) {
   .companies__container {
     -webkit-box-orient: vertical;
@@ -68,6 +75,7 @@
   .companies__body-title {
     font-size: 32px;
     line-height: 40px;
+    letter-spacing: -0.3px;
   }
 }
 
@@ -84,9 +92,18 @@
 }
 
 .companies__body-img {
-  padding: 15px;
+  -webkit-padding-before: 14px;
+          padding-block-start: 14px;
+  -webkit-padding-after: 15px;
+          padding-block-end: 15px;
+  -webkit-padding-start: 15px;
+          padding-inline-start: 15px;
+  -webkit-padding-end: 14px;
+          padding-inline-end: 14px;
   border-radius: 22px;
   background-color: #222233;
+  -webkit-margin-before: -12px;
+          margin-block-start: -12px;
 }
 
 .companies__body-img--green {
@@ -111,7 +128,7 @@
 }
 @media (max-width: 1025px) {
   .companies__card {
-    max-width: 296px;
+    width: 296px;
   }
 }
 @media (max-width: 992.99px) {
@@ -182,4 +199,8 @@
   .companies__column--cards {
     max-width: 100%;
   }
+}
+
+.companies__column .what__text {
+  margin: 0px;
 }/*# sourceMappingURL=companiesSection.css.map */

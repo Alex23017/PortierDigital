@@ -20,6 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
       title: "Discipline",
       text: "As Pasteur himself commented, “Chance favors only the prepared mind.",
       color: "#57efb4",
+      background: "#222233",
     },
     {
       img: "img/porftolioPage/cards/iconStick.webp",
@@ -36,7 +37,9 @@ document.addEventListener("DOMContentLoaded", () => {
   if (cardsRender) {
     cardsRender.innerHTML = arrayCards
       .map(
-        (card) => `<div class="hero__card">
+        (card) => `<div class="hero__card" style="${
+          card.background ? `background: ${card.background}; ` : ""
+        }">
         <div class="hero__card-icon" style="background:${card.color}">
           <img src="${card.img}" alt="icon" />
         </div>

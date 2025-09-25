@@ -5,7 +5,7 @@
 .statistic__cards {
   display: flex;
   justify-content: space-between;
-  gap: 94px;
+  gap: 32px;
   @media (max-width: 768px) {
     flex-direction: column;
   }
@@ -18,7 +18,7 @@
   max-width: 399px;
   gap: 16px;
   @media (max-width: 1025px) {
-    max-width: 190px;
+    max-width: 219px;
   }
   @media (max-width: 768px) {
     max-width: inherit;
@@ -26,10 +26,33 @@
   }
 }
 .statistic__card-title {
-  @include font($primaryTitle);
+  font-size: 64px;
+  line-height: 64px;
   text-wrap: balance;
+  letter-spacing: 0.5px;
+  font-family: "Sora", sans-serif;
+  font-weight: 700;
+  @media (max-width: 1025px) {
+    @include font($primaryTitle);
+  }
+  @media (max-width: 768px) {
+    font-size: 40px;
+    line-height: 48px;
+  }
 }
 .statistic__card-text {
   @include font($primaryText);
   color: $secondaryColor;
+  @media (max-width: 768px) {
+    text-align: start;
+    width: 355px;
+  }
+  @media (max-width: 600px) {
+    // width: 355px;
+    letter-spacing: 0px;
+  }
+  @media (max-width: 400px) {
+    // width: inherit;
+    // max-width: 355px;
+  }
 }
