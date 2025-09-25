@@ -1,4 +1,41 @@
 .goal__text--padding {
   -webkit-padding-before: 16px;
           padding-block-start: 16px;
+}
+
+@media (max-width: 1025px) {
+  .goal__column {
+    max-width: 358px;
+  }
+}
+
+@media (max-width: 1025px) {
+  .goal {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 86px;
+  }
+}
+@media (max-width: 768px) {
+  .goal {
+    gap: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .goal__title {
+    max-width: 350px;
+  }
+}
+
+@media (max-width: 1025px) {
+  .goal__container {
+    padding-inline: 90px;
+  }
+}
+@media (max-width: 768px) {
+  .goal__container {
+    padding-inline: 32px;
+  }
 }/*# sourceMappingURL=goalSection.css.map */

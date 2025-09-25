@@ -1,4 +1,39 @@
 .goal__text--padding {
   padding-block-start: 1rem;
 }
+
+@media (max-width: 1025px) {
+  .goal__column {
+    max-width: 22.375rem;
+  }
+}
+
+@media (max-width: 1025px) {
+  .goal {
+    justify-content: space-between;
+    gap: 5.375rem;
+  }
+}
+@media (max-width: 768px) {
+  .goal {
+    gap: 3.75rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .goal__title {
+    max-width: 21.875rem;
+  }
+}
+
+@media (max-width: 1025px) {
+  .goal__container {
+    padding-inline: 5.625rem;
+  }
+}
+@media (max-width: 768px) {
+  .goal__container {
+    padding-inline: 2rem;
+  }
+}
 /*# sourceMappingURL=goalSection.css.map */

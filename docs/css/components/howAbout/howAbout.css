@@ -32,13 +32,14 @@
   font-style: normal;
   font-size: 3rem;
   line-height: 3.5rem;
-  letter-spacing: 0;
-  max-width: 32.5rem;
+  letter-spacing: -0.0625rem;
+  max-width: 31.75rem;
 }
 @media (max-width: 768px) {
   .about__title {
     font-size: 2rem;
     line-height: 2.5rem;
+    letter-spacing: -0.01875rem;
   }
 }
 

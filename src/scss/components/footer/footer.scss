@@ -7,6 +7,9 @@
   flex-direction: column;
   max-width: 1440px;
   background-color: $backgroundFooter;
+  .logo {
+    padding-block: 0px;
+  }
 }
 
 .footer__contact {
@@ -20,12 +23,18 @@
     display: flex;
     flex-direction: column;
     gap: 8px;
+    @media (max-width: 1024px) {
+    max-width: 187px;
+    }
   }
   @media (max-width: 768px) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 32px;
-    padding-block-start: 23px;
+    padding-block: 48px;
+    padding-block-end: 55px;
+    column-gap: 32px;
+    row-gap: 8px;
     > div {
       width: 159px;
     }
@@ -42,6 +51,8 @@
 
 .footer__copy-title {
   color: $secondaryColor;
+  margin-block-start: -5px;
+  letter-spacing: 0.5px;
 }
 
 .footer__copy {
@@ -58,13 +69,34 @@
   display: flex;
   align-items: center;
   gap: 24px;
+  @media (max-width: 768px) {
+    gap: 16px;
+  
+  }
 }
-.footer__link--green {
-  background-color: $backgroundGreen;
-  padding: 8px;
+
+.footer__link {
+  padding: 8.5px;
   border-radius: 50px;
 }
+
+.footer__link--green {
+  background-color: $backgroundGreen;
+}
+
 .footer__link img {
   width: 15px;
   height: 15px;
+}
+.footer .logo-link {
+  gap: 8px;
+
+}
+.footer .logo__text {
+    font-size: 27px;
+    line-height: 100%;
+}
+.footer .logo__img {
+  width: 44px;
+  height: 44px;
 }

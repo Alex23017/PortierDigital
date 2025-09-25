@@ -11,6 +11,7 @@
     position: relative;
     gap: 0.375rem;
     cursor: pointer;
+    margin-inline-end: 0.5rem;
   }
 }
 .burger::before, .burger::after,

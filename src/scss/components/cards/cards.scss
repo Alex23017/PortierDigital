@@ -30,8 +30,16 @@
   display: flex;
   flex-direction: column;
   padding: 20px;
-  width: 100%;
-  max-width: 402px;
+  width: 402px;
+  border-radius: 8px;
+  @media (max-width: 1439px) {
+    width: inherit;
+    max-width: 402px;
+  }
+  @media (max-width: 768px) {
+    padding-inline-end: 16px;
+  
+  }
 }
 .hero__card--grey {
   background-color: $backgroundFooter;

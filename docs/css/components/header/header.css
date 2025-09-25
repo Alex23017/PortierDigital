@@ -17,6 +17,8 @@
 
 .logo {
   flex: 1 1;
+  padding-block-start: 1.625rem;
+  padding-block-end: 1.125rem;
 }
 @media (max-width: 768px) {
   .logo {
@@ -53,7 +55,6 @@
   align-items: center;
   justify-content: center;
   gap: 2.5rem;
-  padding-block: 2.25rem;
   transition: all 0.3s ease-in-out;
 }
 @media (max-width: 768px) {
@@ -91,5 +92,10 @@
   align-items: center;
   gap: 0.5rem;
   cursor: pointer;
+}
+@media (max-width: 600px) {
+  .logo-link {
+    gap: 0.25rem;
+  }
 }
 /*# sourceMappingURL=header.css.map */

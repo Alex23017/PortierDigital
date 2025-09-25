@@ -6,6 +6,14 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   gap: 73px;
+  -webkit-padding-after: 124px;
+          padding-block-end: 124px;
+}
+@media (max-width: 1025px) {
+  .what__container {
+    -webkit-padding-after: 100px;
+            padding-block-end: 100px;
+  }
 }
 @media (max-width: 992.99px) {
   .what__container {
@@ -17,6 +25,13 @@
         -ms-flex-align: center;
             align-items: center;
     gap: 60px;
+  }
+}
+@media (max-width: 768px) {
+  .what__container {
+    -webkit-padding-after: 45px;
+            padding-block-end: 45px;
+    gap: 66px;
   }
 }
 
@@ -32,6 +47,11 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+@media (max-width: 1025px) {
+  .what__column--what {
+    max-width: 333px;
+  }
+}
 @media (max-width: 992.98px) {
   .what__column--what {
     max-width: 531px;
@@ -44,7 +64,7 @@
   font-style: normal;
   font-size: 48px;
   line-height: 56px;
-  letter-spacing: 0px;
+  letter-spacing: -1px;
   -webkit-padding-after: 16px;
           padding-block-end: 16px;
 }
@@ -58,11 +78,17 @@
     font-size: 32px;
     line-height: 40px;
     text-align: start;
+    letter-spacing: -0.3px;
   }
 }
 
 .what__body {
   max-width: 660px;
+}
+@media (max-width: 1025px) {
+  .what__body {
+    max-width: 333px;
+  }
 }
 
 .what__body-text,
@@ -77,9 +103,33 @@
   color: #88888d;
 }
 
+.what__body-text {
+  max-width: 530px;
+}
+@media (max-width: 768px) {
+  .what__body-text {
+    width: 350px;
+  }
+}
+@media (max-width: 400px) {
+  .what__body-text {
+    max-width: 300px;
+  }
+}
+
+.what__text {
+  -webkit-margin-after: -4px;
+          margin-block-end: -4px;
+}
+
 .what__card-text {
   -webkit-padding-after: 24px;
           padding-block-end: 24px;
+}
+@media (max-width: 768px) {
+  .what__card-text {
+    max-width: 242px;
+  }
 }
 
 .what__cards {
@@ -111,6 +161,11 @@
   display: flex;
   max-width: 438px;
   gap: 4px;
+}
+@media (max-width: 768px) {
+  .what__card {
+    max-width: 350px;
+  }
 }
 
 .what__card--grey {

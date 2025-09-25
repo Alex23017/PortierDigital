@@ -34,6 +34,12 @@
   max-height: 750px;
   object-fit: cover;
   border-radius: 8px;
+  @media (max-width: 1225px) {
+    max-height: 600px;
+  }
+  @media (max-width: 768px) {
+      max-height: 260px;
+  }
 }
 
 .card__footer {
@@ -54,6 +60,7 @@
     padding-inline-end: 15px;
     bottom: 0;
     left: 0;
+
   }
 }
 .card__footer-link {
@@ -63,6 +70,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-block-start: 20px;
+  @media (max-width: 768px) {
+    margin-block-start: -4px;
+}
 }
 
 .card__footer-link img {
@@ -73,7 +84,12 @@
   padding: 20px;
   background-color: $backgroundFooter;
   border-radius: 8px;
+
   @include font($primaryText);
+
+  @media (max-width: 1025px) {
+    letter-spacing: 0.1px;
+  }
   @media (max-width: 768px) {
     padding-block: 10px;
     padding-inline: 15px;

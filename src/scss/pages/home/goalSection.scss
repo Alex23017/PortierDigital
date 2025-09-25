@@ -3,3 +3,31 @@
 .goal__text--padding {
   padding-block-start: 16px;
 }
+.goal__column {
+  @media (max-width: 1025px) {
+    max-width: 358px;
+  }
+}
+.goal {
+  @media (max-width: 1025px) {
+    justify-content: space-between;
+    gap: 86px;
+  }
+  @media (max-width: 768px) {
+    gap: 60px;
+  }
+}
+.goal__title {
+  @media (max-width: 768px) {
+    max-width: 350px;
+  }
+}
+
+.goal__container {
+  @media (max-width: 1025px) {
+    padding-inline: 90px;
+  }
+  @media (max-width: 768px) {
+    padding-inline: 32px;
+  }
+}

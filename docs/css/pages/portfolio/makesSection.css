@@ -40,7 +40,7 @@
   font-style: normal;
   font-size: 3rem;
   line-height: 3.5rem;
-  letter-spacing: 0;
+  letter-spacing: -0.0625rem;
   max-width: 40.625rem;
 }
 @media (max-width: 992.99px) {
