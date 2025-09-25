@@ -1,0 +1,141 @@
+.find__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+@media (max-width: 768px) {
+  .find__container {
+    -webkit-padding-before: 90px;
+            padding-block-start: 90px;
+  }
+}
+
+.find__body {
+  text-align: center;
+  max-width: 830px;
+}
+
+.find__body-title {
+  font-family: "Sora", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 72px;
+  line-height: 86px;
+  letter-spacing: -1.5px;
+}
+@media (max-width: 1025px) {
+  .find__body-title {
+    font-size: 64px;
+    line-height: 64px;
+  }
+}
+@media (max-width: 768px) {
+  .find__body-title {
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -0.3px;
+  }
+}
+
+.find__body-text {
+  font-family: "Sora", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.3px;
+  color: #88888d;
+  -webkit-padding-before: 16px;
+          padding-block-start: 16px;
+  -webkit-padding-after: 48px;
+          padding-block-end: 48px;
+}
+
+.find__subscribe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 8px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 720px;
+}
+@media (max-width: 992.99px) {
+  .find__subscribe {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    max-width: 720px;
+  }
+}
+
+.find__input {
+  font-family: "Sora", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0px;
+  width: 567px;
+  -webkit-padding-before: 15px;
+          padding-block-start: 15px;
+  -webkit-padding-after: 14px;
+          padding-block-end: 14px;
+  -webkit-padding-start: 20px;
+          padding-inline-start: 20px;
+  border: solid 1px #222233;
+  border-radius: 8px;
+}
+@media (max-width: 1280px) {
+  .find__input {
+    width: 100%;
+    max-width: 567px;
+  }
+}
+.find__input::-webkit-input-placeholder {
+  color: white;
+}
+.find__input::-moz-placeholder {
+  color: white;
+}
+.find__input:-ms-input-placeholder {
+  color: white;
+}
+.find__input::-ms-input-placeholder {
+  color: white;
+}
+.find__input::placeholder {
+  color: white;
+}
+@media (max-width: 992.99px) {
+  .find__input {
+    max-width: 100%;
+  }
+}
+
+.find__subscribe .button {
+  min-width: 127px;
+}
+@media (max-width: 992.99px) {
+  .find__subscribe .button {
+    min-width: inherit;
+    max-width: inherit;
+    width: 100%;
+  }
+}/*# sourceMappingURL=blog.css.map */

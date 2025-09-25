@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-      <link rel="shortcut icon" href="img/header/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="img/header/favicon.png" type="image/x-icon" />
     <link
       href="https://fonts.googleapis.com/css?family=Sora:400,600,700&display=swap"
       rel="stylesheet"
@@ -16,18 +16,17 @@
     />
     <link rel="stylesheet" href="css/style/style.css" />
   </head>
-
   <body>
-    <div class="wrapper wrapper-portfolio">
+    <div class="wrapper wrapper-blog">
       <header class="header">@@include("../components/header/header.html")</header>
 
       <main class="main">
-        @@include("../pages/aboutme/heroSection.html") @@include("../pages/aboutme/imgSection.html")
+        @@include("../pages/blog/heroSection.html") @@include("../pages/blog/latestSection.html")
         @@include("../components/howAbout/howAbout.html")
-        @@include("../components/arrowUp/arrowUp.html")
       </main>
       <footer class="footer">@@include("../components/footer/footer.html")</footer>
     </div>
+
     <script defer src="js/burger.bundle.js"></script>
   </body>
 </html>

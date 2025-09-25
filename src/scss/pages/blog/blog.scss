@@ -1,0 +1,78 @@
+@use "../../variables/variables" as *;
+
+.find {
+}
+.find__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  @media (max-width: 768px) {
+    padding-block-start: 90px;
+  }
+}
+.find__body {
+  text-align: center;
+  max-width: 830px;
+}
+.find__body-title {
+  @include font($primaryHeroTitle);
+  @media (max-width: 1025px) {
+    font-size: 64px;
+    line-height: 64px;
+  }
+  @media (max-width: 768px) {
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -0.3px;
+  }
+}
+.find__body-text {
+  @include font($primaryHeroText);
+  color: $secondaryColor;
+  padding-block-start: 16px;
+  padding-block-end: 48px;
+}
+.find__subscribe {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-start;
+  align-items: center;
+  width: 720px;
+  @media (max-width: 992.99px) {
+    flex-direction: column;
+    width: 100%;
+    max-width: 720px;
+  }
+}
+.find__input {
+  @include font($primaryText);
+  width: 567px;
+  padding-block-start: 15px;
+  padding-block-end: 14px;
+  padding-inline-start: 20px;
+  border: solid 1px $backgroundFooter;
+  border-radius: 8px;
+  @media (max-width: 1280px) {
+    width: 100%;
+    max-width: 567px;
+  }
+  &::placeholder {
+    color: white;
+  }
+  @media (max-width: 992.99px) {
+    max-width: 100%;
+  
+  }
+}
+
+.find__subscribe .button {
+  min-width: 127px;
+  @media (max-width: 992.99px) {
+    min-width: inherit;
+    max-width: inherit;
+    width: 100%;
+  }
+}
+.find__link {
+}

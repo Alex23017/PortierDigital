@@ -1,0 +1,109 @@
+.find__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+@media (max-width: 768px) {
+  .find__container {
+    padding-block-start: 5.625rem;
+  }
+}
+
+.find__body {
+  text-align: center;
+  max-width: 51.875rem;
+}
+
+.find__body-title {
+  font-family: "Sora", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 4.5rem;
+  line-height: 5.375rem;
+  letter-spacing: -0.09375rem;
+}
+@media (max-width: 1025px) {
+  .find__body-title {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+}
+@media (max-width: 768px) {
+  .find__body-title {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    letter-spacing: -0.01875rem;
+  }
+}
+
+.find__body-text {
+  font-family: "Sora", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  letter-spacing: -0.01875rem;
+  color: #88888d;
+  padding-block-start: 1rem;
+  padding-block-end: 3rem;
+}
+
+.find__subscribe {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: flex-start;
+  align-items: center;
+  width: 45rem;
+}
+@media (max-width: 992.99px) {
+  .find__subscribe {
+    flex-direction: column;
+    width: 100%;
+    max-width: 45rem;
+  }
+}
+
+.find__input {
+  font-family: "Sora", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  letter-spacing: 0;
+  width: 35.4375rem;
+  padding-block-start: 0.9375rem;
+  padding-block-end: 0.875rem;
+  padding-inline-start: 1.25rem;
+  border: solid 0.0625rem #222233;
+  border-radius: 0.5rem;
+}
+@media (max-width: 1280px) {
+  .find__input {
+    width: 100%;
+    max-width: 35.4375rem;
+  }
+}
+.find__input::-moz-placeholder {
+  color: white;
+}
+.find__input::placeholder {
+  color: white;
+}
+@media (max-width: 992.99px) {
+  .find__input {
+    max-width: 100%;
+  }
+}
+
+.find__subscribe .button {
+  min-width: 7.9375rem;
+}
+@media (max-width: 992.99px) {
+  .find__subscribe .button {
+    min-width: inherit;
+    max-width: inherit;
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=blog.css.map */

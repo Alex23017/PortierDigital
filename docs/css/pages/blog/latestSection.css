@@ -1,0 +1,224 @@
+@media (max-width: 992.99px) {
+  .latest__body {
+    text-align: center;
+  }
+}
+@media (max-width: 600px) {
+  .latest__body {
+    text-align: start;
+  }
+}
+
+.latest__title {
+  font-family: "Sora", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 3rem;
+  line-height: 3.5rem;
+  letter-spacing: -0.0625rem;
+}
+@media (max-width: 768px) {
+  .latest__title {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    letter-spacing: -0.01875rem;
+  }
+}
+
+.latest__text {
+  font-family: "Sora", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  letter-spacing: 0;
+  color: #88888d;
+  max-width: 33.1875rem;
+  padding-block-start: 1rem;
+  padding-block-end: 3rem;
+}
+@media (max-width: 992.99px) {
+  .latest__text {
+    max-width: 100%;
+  }
+}
+
+.latest__cards {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+@media (max-width: 992.99px) {
+  .latest__cards {
+    align-items: center;
+  }
+}
+
+.latest__card {
+  display: flex;
+}
+@media (max-width: 992.99px) {
+  .latest__card {
+    flex-direction: column;
+    place-items: center;
+    gap: 0;
+    width: 21.875rem;
+  }
+}
+@media (max-width: 400px) {
+  .latest__card {
+    width: inherit;
+    max-width: 15.625rem;
+  }
+}
+
+.latest__img {
+  border-left: 0.5rem;
+  max-width: 35rem;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (max-width: 1024px) {
+  .latest__img {
+    max-width: 26.25rem;
+    width: 100%;
+    min-width: 12.5rem;
+    height: 19.75rem;
+  }
+}
+@media (max-width: 1024px) {
+  .latest__img {
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+  }
+}
+@media (max-width: 400px) {
+  .latest__img {
+    max-width: 18.75rem;
+  }
+}
+
+.latest__info {
+  padding-block-start: 2.5rem;
+  padding-inline-start: 2.5rem;
+}
+@media (max-width: 1025px) {
+  .latest__info {
+    max-width: 21.25rem;
+    padding-block-start: 1.875rem;
+  }
+}
+@media (max-width: 992.99px) {
+  .latest__info {
+    padding: 1.25rem;
+  }
+}
+@media (max-width: 768px) {
+  .latest__info {
+    max-width: 100%;
+  }
+}
+
+.latest__info-title {
+  font-size: 2rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+  font-family: "Sora", sans-serif;
+  padding-block-end: 1rem;
+  letter-spacing: -0.01875rem;
+}
+@media (max-width: 1025px) {
+  .latest__info-title {
+    width: 21.25rem;
+    white-space: pre-line;
+  }
+}
+@media (max-width: 992.99px) {
+  .latest__info-title {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    width: inherit;
+    max-width: 19.375rem;
+  }
+}
+@media (max-width: 600px) {
+  .latest__info-title {
+    letter-spacing: 0;
+  }
+}
+
+.latest__info-text {
+  padding-block-end: 1.5rem;
+  font-family: "Sora", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  letter-spacing: 0;
+  color: #88888d;
+  max-width: 34.375rem;
+}
+@media (max-width: 1025px) {
+  .latest__info-text {
+    width: 21.25rem;
+  }
+}
+@media (max-width: 992.99px) {
+  .latest__info-text {
+    width: inherit;
+    max-width: 19.375rem;
+  }
+}
+
+.latest__info-items {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.latest__info-link {
+  color: #006ada;
+  font-family: "Sora", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  letter-spacing: 0;
+}
+.latest__info-link .latest__info-img {
+  width: 0.9375rem;
+  height: 0.9375rem;
+}
+
+.latest__info--grey {
+  background-color: #222233;
+}
+
+@media (max-width: 1025px) {
+  .latest__info-items--none {
+    display: none;
+  }
+}
+@media (max-width: 992.99px) {
+  .latest__info-items--none {
+    display: flex;
+  }
+}
+
+@media (max-width: 1025px) {
+  .latest__info-text--padding {
+    padding-block-end: 0.875rem;
+  }
+}
+@media (max-width: 992.99px) {
+  .latest__info-text--padding {
+    padding-block-end: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .latest__info-title--wrap {
+    max-width: 15.625rem;
+  }
+}
+/*# sourceMappingURL=latestSection.css.map */
