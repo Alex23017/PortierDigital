@@ -48,8 +48,7 @@
   align-items: center;
   gap: 12px;
 }
-.template__users-img {
-}
+
 .template__users-name {
   @include font($primaryText);
   color: $secondaryColor;
